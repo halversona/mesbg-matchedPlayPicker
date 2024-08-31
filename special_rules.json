@@ -1,0 +1,67 @@
+{
+  "special_rules": {
+    "worthless_land": {
+      "rule": "Worthless Land",
+      "description": "The centre of the battlefield provides very little tactical value, and so is not much use to either force. Models wholly within 12 of the centre of the battlefield do not count as being in any quarter of the battlefield for working out Victory Points."
+    },
+    "maelstrom_of_battle": {
+      "rule": "Maelstrom of Battle",
+      "description": "At the end of your Move phase, roll a D6 for each of your warbands not on the battlefield and consult the chart in Maelstrom of Battle.",
+      "maelstrom_table_ref": "maelstromTable.json"
+    },
+    "uncovering_relic": {
+      "rule": "Uncovering the Relic",
+      "description": "Only one of the Objective markers is actually the relic that both sides seek. The first time each turn an unengaged Infantry model ends its movement in base contact with an Objective, they may search it in an attempt to uncover the relic. When this happens roll a D6. On a 6, the relic has been discovered and the model that discovered it takes possession of it (Might cannot be used to influence this roll). If the roll is a 1-5 then the relic is not there, remove the Objective from play. If the first five Objective markers to be searched do not reveal the relic, the last one will automatically be the relic, there is no need to roll for it."
+    },
+    "relic_of_power": {
+      "rule": "Relic of Power",
+      "description": "The relic is treated as a Light Object(see page 109 of the Middle-earth Strategy Battle Game rules manual). However the dark powers that lie upon it may seep into the mind of its holder. Unwilling to give it up, models carrying the relic may not drop it or pass it to another model. Additionally, at the start of each turn, before Priority is rolled, roll a D6. On a 1, the model is Transfixed as on page 98 of the Middle-earth Strategy Battle Game rules manual. Might may not be used to modify this roll."
+    },
+    "artefact": {
+      "rule": "The Artefact",
+      "description": "The artefact must be dug out of the soil before it can be carried anywhere. An Infantry model who is in base contact with the Artefact marker at the end of its Move may attempt to free it. Roll a D6. On a 4+, the artefact has been freed, the artefact is treated as a Light Object (see page 109 of the Middle-earth Strategy Battle Game rules manual). Might cannot be used to influence this roll. Only one model from each side may attempt to pick up the artefact each turn."
+    },
+    "supply_markers": {
+      "rule": "Supply Markers",
+      "description": "The Objective markers represent a series of supplies that both sides are trying to destroy. To destroy an enemy supply marker, a model must be in base contact with the marker during the End phase of a turn having not cast any Magical Powers, used a missile weapon, been involved in a Fight, or been under the effects of the Paralyse, Immobilise or Transfix Magical Power during that turn. Once a supply marker has been destroyed, remove it from play."
+    },
+    "the_relic": {
+      "rule": "The Relic",
+      "description": "Each relic is a Light Object (see page 109 of the Middle-earth Strategy Battle Game rules manual). A relic is considered to have been retrieved if at the end of the game it is being carried by a friendly model. If a relic has been picked up by an enemy model, and is then subsequently dropped or retaken by a friendly model, then a player must try to return it to its original position as quickly as possible. Until it has been picked up by an enemy model, friendly models may not pick up their own relic."
+    },
+    "time_of_heroes": {
+      "rule": "A Time of Heroes",
+      "description": "Each time your force kills an enemy Hero in a Fight, one of your Hero models in the same Fight (your choice) regains a point of Might lost earlier in the battle."
+    },
+    "last_stand": {
+      "rule": "The Last Stand",
+      "description": "Each time either leader kills a Hero or a multi- Wound model, they immediately regain a point of Might spent earlier in the battle."
+    },
+    "campsite": {
+      "rule": "The Camp Site",
+      "description": "The campsites are the deployment areas of the two armies. A campsite is captured if during the End phase of any turn you have more models entirely within your opponent’s campsite than they do. Should your models subsequently leave a captured campsite, it will no longer count as being captured. In order to keep an opponent’s campsite captured, you will need to keep your models within your opponent’s campsite. Models that are within their own campsite will defend it at all costs. Any model that is within its own campsite at the start of a turn will automatically pass any Courage tests it is required to make for the remainder of that turn."
+    },
+    "reinforcements": {
+      "rule": "Reinforcements",
+      "description": "The campsites are the deployment areas of the two armies. A campsite is captured if during the End phase of any turn you have more models entirely within your opponent’s campsite than they do. Should your models subsequently leave a captured campsite, it will no longer count as being captured. In order to keep an opponent’s campsite captured, you will need to keep your models within your opponent’s campsite. Models that are within their own campsite will defend it at all costs. Any model that is within its own campsite at the start of a turn will automatically pass any Courage tests it is required to make for the remainder of that turn.",
+      "table": "1-3: The warband does not arrive, but receives +1 to this dice roll next turn. 3-5: The controlling player chooses a point on their board edge at least 6 from a corner – all models in the warband move onto the battlefield from this point.",
+      "designer_note": "Special rules that allow for models to arrive on from any table edge (such as the Goblin Mercenary Captain’s Mercenary Ambush) must choose the controlling player’s table edge for this Scenario."
+    },
+    "dark_of_night": {
+      "rule": "The Dark of Night",
+      "description": "Due to the reduced visibility, models cannot be targeted by shooting, Magical Powers or special abilities over 12 away. However, as it is much harder to avoid a shot in the dark, all shooting attacks gain a bonus of +1 when rolling To Wound. Siege Engine models may still target enemy models more than 12 away – however in this situation they will only ever hit on the roll of a 6."
+    },
+    "the_target": {
+      "rule": "The Target",
+      "description": "At the start of the game, secretly note down one of your opponent’s Hero models; this is your target for the game. This may not be your opponent’s leader unless they only have one Hero."
+    },
+    "the_assassin": {
+      "rule": "The Assassin",
+      "description": "At the start of the game, secretly note down one of your Hero models; this is your assassin. This may not be your leader unless you only have one Hero."
+    },
+    "controlling_objectives": {
+      "rule": "Controlling Objectives",
+      "description": "At the start of the game, all of the Objectives are considered to be neutral and do not belong to either side. If, during the End phase of any turn, one or more of your models are in base contact with an Objective, then that Objective comes under your control. If, during the End phase both sides have models in base contact with an Objective, then that Objective returns to being a neutral Objective."
+    }
+  }
+}

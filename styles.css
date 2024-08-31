@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#scenarioInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomVeto {
+  background-color: lightgrey;
+  width: 50px;
+  height: 25px;
+  border-radius: 20%;
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.randomVeto::before {
+  position: absolute;
+  content: " ";
+  background-color: darkred;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 4px;
+  transition: 0.2s;
+}
+
+input:checked + .randomVeto {
+  background-color: gray;
+}
+
+input:checked + .randomVeto::before {
+  transform: translatex(25px);
+}
+
+input {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poolBox {
+  border: 1px solid darkred;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0 60px;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+  .headerText {
+    padding: 0 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+  }
+
+  .scenarioPools {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: 200px;
+  }
+
+  .scenarioGrid {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-auto-rows: 200px;
+  }
+
+  .poolBox {
+    border: 1px solid darkred;
+    margin: 5px;
+  }
+
+  .headerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #scenarioInfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "maelstromResults": [
+    {
+      "result": 1,
+      "outcome": "The warband does not arrive."
+    },
+    {
+      "result": 2,
+      "outcome": "Your opponent chooses a point on either the north or south board edges at least 6\" from a corner – all models in the warband move onto the battlefield from this point."
+    },
+    {
+      "result": 3,
+      "outcome": "Your opponent chooses a point on either the east or west board edges at least 6\" from a corner – all models in the warband move onto the battlefield from this point."
+    },
+    {
+      "result": 4,
+      "outcome": "You choose a point on either the north or south board edges at least 6\" from a corner – all models in the warband move onto the battlefield from this point."
+    },
+    {
+      "result": 5,
+      "outcome": "You choose a point on either the east or west board edges at least 6\" from a corner – all models in the warband move onto the battlefield from this point."
+    },
+    {
+      "result": 6,
+      "outcome": "You choose a point on any board edge at least 6\" from a corner – all models in the warband move onto the battlefield from this point."
+    }
+  ]
+}
