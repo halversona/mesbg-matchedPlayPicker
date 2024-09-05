@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>MESBG Matched Play Scenarios</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- This is div contains the header information for the page. This should not be adjusted by the page.-->
+      <div class="headerDiv">
+        <h1>The Pools</h1>
+        <div class="buttonContainer">
+          random<input type="checkbox" id="randomVetoCheck" /><label
+            for="randomVetoCheck"
+            class="randomVeto"
+          ></label
+          >veto
+        </div>
+        <p class="headerText">
+          At the start of each round, roll a D6 to determine which of the pools
+          will be used, then a D3/D6 to determine which of the 3 Scenarios from
+          that pool will be played. After this has been decided, remove the
+          entire pool from the selection process.
+        </p>
+      </div>
+      <div class="selectorContainer">
+        <button id="genScenario">Click here to Generate Scenario</button>
+      </div>
+      <div class="scenarioPools">
+        <!--This has the Pools and the scenarions in reach respective pool. Each scenario can be clicked on to pull up the 
+        scenario. Once a scenario has been pulled up, the pool div should be minimized and replaced by the scenario info section-->
+        <div id="poolOne" class="poolBox">
+          <h2>Pool 1</h2>
+          <h3>Maelstrom of Battle Scenarios</h3>
+          <a href="#" class="scenario-link" data-scenario="heirlooms"
+            >Heirlooms of Ages Past</a
+          >
+          <a href="#" class="scenario-link" data-scenario="hold_ground"
+            >Hold Ground</a
+          >
+          <a href="#" class="scenario-link" data-scenario="command_battlefield"
+            >Command the Battlefield</a
+          >
+        </div>
+        <div id="poolTwo" class="poolBox">
+          <h2>Pool 2</h2>
+          <h3>Hold Objective Scenarios</h3>
+          <a href="#" class="scenario-link" data-scenario="domination"
+            >Domination</a
+          >
+          <a href="#" class="scenario-link" data-scenario="capture_control"
+            >Capture and Control</a
+          >
+          <a href="#" class="scenario-link" data-scenario="breakthrough"
+            >Breakthrough</a
+          >
+        </div>
+        <div id="poolThree" class="poolBox">
+          <h2>Pool 3</h2>
+          <h3>Object Scenarios</h3>
+          <a href="#" class="scenario-link" data-scenario="seize_prize"
+            >Seize the Prize</a
+          >
+          <a href="#" class="scenario-link" data-scenario="destroy_supplies"
+            >Destroy the Supplies</a
+          >
+          <a href="#" class="scenario-link" data-scenario="retrieval"
+            >Retrieval</a
+          >
+        </div>
+        <div id="poolFour" class="poolBox">
+          <h2>Pool 4</h2>
+          <h3>Kill the Enemy Scenarios</h3>
+          <a href="#" class="scenario-link" data-scenario="lords_battle"
+            >Lords of Battle</a
+          >
+          <a href="#" class="scenario-link" data-scenario="contest_champions"
+            >Contest of Champions</a
+          >
+          <a href="#" class="scenario-link" data-scenario="death"
+            >To the Death!</a
+          >
+        </div>
+        <div id="poolFive" class="poolBox">
+          <h2>Pool 5</h2>
+          <h3>Manoveuring Scenarios</h3>
+          <a href="#" class="scenario-link" data-scenario="storm_camp"
+            >Storm the Camp</a
+          >
+          <a href="#" class="scenario-link" data-scenario="reconnoitre"
+            >Reconnoitre</a
+          >
+          <a href="#" class="scenario-link" data-scenario="divide_conquer"
+            >Divide and Conquer</a
+          >
+        </div>
+        <div id="poolSix" class="poolBox">
+          <h2>Pool 6</h2>
+          <h3>Unique Scenarios</h3>
+          <a href="#" class="scenario-link" data-scenario="fog_of_war"
+            >Fog of War</a
+          >
+          <a href="#" class="scenario-link" data-scenario="clash_moonlight"
+            >Clash by Moonlight</a
+          >
+          <a href="#" class="scenario-link" data-scenario="assassination"
+            >Assassination</a
+          >
+        </div>
+      </div>
+      <div id="scenarioInfo" style="display: none">
+        <!-- This will display the scenario information that has been selected by the generator or player.-->
+        <h2 id="scenarioTitle">Scenario Title</h2>
+        <p id="scenario-FlavorText">Scenario Flavor Text</p>
+        <div class="scenarioGrid">
+          <div class="scenario-Outline">
+            <h3 class="scenario-InfoTitle">Scenario Outline</h3>
+            <p id="scenario-OutlineText">
+              Scenario Text Place Holder to make sure shit works
+            </p>
+          </div>
+          <div class="scenarioArmies">
+            <h3 class="scenarioInfoTitle">The Armies</h3>
+            <p id="scenario-ArmiesText">
+              Scenario Text Place Holder to make sure shit works
+            </p>
+          </div>
+          <div class="scenarioLayout">
+            <h3 class="scenarioInfoTitle">Layout</h3>
+            <p id="scenario-LayoutText">
+              Scenario Text Place Holder to make sure shit works
+            </p>
+          </div>
+          <div class="scenarioStartingPositions">
+            <h3 class="scenarioInfoTitle">Starting Positions</h3>
+            <p id="scenario-StartingPositionsText">
+              Scenario Text Place Holder to make sure shit works
+            </p>
+          </div>
+          <div class="scenarioInitialPriority">
+            <h3 class="scenarioInfoTitle">Initial Priority</h3>
+            <p id="scenario-InitialPriorityText">
+              Scenario Text Place Holder to make sure shit works
+            </p>
+          </div>
+          <div class="scenarioObjectives">
+            <h3 class="scenarioInfoTitle">Objectives</h3>
+            <p id="scenario-ObjectivesText">
+              Scenario Text Place Holder to make sure shit works
+            </p>
+            <!-- If there is a map for the objectives or scenario, it goes here-->
+          </div>
+          <div class="scenarioScoringVP">
+            <h3 class="scenarioInfoTitle">Scoring Victory Points</h3>
+            <ul id="scenario-ScoringVPText"></ul>
+          </div>
+          <div class="scenarioSpecialRules">
+            <h3 class="scenarioInfoTitle">Special Rules</h3>
+            <ul id="scenario-SpecialRules"></ul>
+            <!-- If its a Maelstrom of Battle Scenario, the table goes here-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
