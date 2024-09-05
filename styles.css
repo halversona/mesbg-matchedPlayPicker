@@ -1,126 +1,165 @@
 body {
+  margin: 0;
+  padding: 0 10px;
+  background-color: rgb(244, 237, 227);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 5px 0;
+  color: darkred;
+}
+
+#scenarioInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.scenarioPools {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-auto-rows: 150px;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.randomVeto {
+  background-color: lightgrey;
+  width: 50px;
+  height: 25px;
+  border-radius: 20%;
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.randomVeto::before {
+  position: absolute;
+  content: " ";
+  background-color: darkred;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 4px;
+  transition: 0.2s;
+}
+
+input:checked + .randomVeto {
+  background-color: gray;
+}
+
+input:checked + .randomVeto::before {
+  transform: translatex(25px);
+}
+
+input {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poolBox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid darkred;
+  margin: 5px;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.linkTree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+a {
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
     margin: 0;
     padding: 0 10px;
-  }
-  
-  h1 {
-    margin-bottom: 0;
-  }
-  
-  #scenarioInfo {
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-  }
-  
-  .buttonContainer {
+    background-color: rgb(244, 237, 227);
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  
-  .randomVeto {
-    background-color: lightgrey;
-    width: 50px;
-    height: 25px;
-    border-radius: 20%;
-    margin: 0 15px;
-    cursor: pointer;
-    position: relative;
-    transition: 0.2s;
+
+  h1,
+  h2,
+  h3 {
+    margin: 0 0 5px 0;
+    color: darkred;
   }
-  
-  .randomVeto::before {
-    position: absolute;
-    content: " ";
-    background-color: darkred;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin: 4px;
-    transition: 0.2s;
+  .headerText {
+    padding: 0 10px;
   }
-  
-  input:checked + .randomVeto {
-    background-color: gray;
-  }
-  
-  input:checked + .randomVeto::before {
-    transform: translatex(25px);
-  }
-  
-  input {
-    display: none;
-  }
-  
+
   .container {
     display: flex;
     flex-direction: column;
+    max-width: 890px;
+    margin: 0;
+  }
+
+  .scenarioPools {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-rows: 150px;
     align-items: center;
   }
-  
+
+  .scenarioGrid {
+    display: grid;
+    margin-right: 55px;
+    grid-template-columns: 420px 420px;
+    grid-auto-rows: auto;
+    grid-column-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .poolBox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid darkred;
+    margin: 5px;
+    padding: 0 15px;
+    align-items: center;
+  }
+
   .headerDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
-  
-  .poolBox {
-    border: 1px solid darkred;
-    margin: 5px;
+
+  #scenarioInfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 890px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    body {
-      margin: 0;
-      padding: 0 60px;
-    }
-  
-    h1 {
-      margin-bottom: 0;
-    }
-    .headerText {
-      padding: 0 10px;
-    }
-  
-    .container {
-      display: flex;
-      flex-direction: column;
-      max-width: 800px;
-    }
-  
-    .scenarioPools {
-      display: grid;
-      grid-template-columns: 300px 300px 300px;
-      grid-auto-rows: 200px;
-    }
-  
-    .scenarioGrid {
-      display: grid;
-      margin-right: 55px;
-      grid-template-columns: 350px 350px;
-      grid-auto-rows: auto;
-    }
-  
-    .poolBox {
-      border: 1px solid darkred;
-      margin: 5px;
-    }
-  
-    .headerDiv {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }
-  
-    #scenarioInfo {
-      display: flex;
-      flex-direction: column;
-      max-width: 800px;
-    }
-  }
-  
+}
