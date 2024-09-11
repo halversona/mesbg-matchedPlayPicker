@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("headerText").textContent =
         "The Veto method will randomly select a pool for the players to pick from. The player who loses the initiative roll in the scenario select phase will veto the first scenario. The winner will veto one of the two remaining scenarios, the scenario that was not veto'd is the scenario to be played.";
       document.getElementById("genScenario").textContent = "Generate";
+      resetScenarios();
     } else {
       console.log("Random mode activated"); // False
       genMethodSwitch = false;
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "The Random method will randomly select a pool and scenario to be played by the players.";
     }
     document.getElementById("genScenario").textContent = "Generate";
+    resetScenarios();
   });
 
   // Listen for button blick and then generate the scenario.
@@ -235,6 +237,8 @@ document.addEventListener("DOMContentLoaded", function () {
       loadScenario(selectedScenario);
     } else if (genMethodSwitch === true) {
       console.log("Veto Mode generation");
+      // This feels excessive to reset this. I need a better option.
+      resetScenarios();
       switch (scenarioPool) {
         case 1:
           scenarioPoolName = "Maelstrom of Battle";
@@ -291,6 +295,19 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("poolFive").style.display = "none";
           break;
       }
+      document.getElementById("scenarioPools").style.gridTemplateColumns =
+        "300px";
     }
   }
 });
+
+function resetScenarios() {
+  document.getElementById("scenarioPools").style.gridTemplateColumns =
+    "300px 300px 300px";
+  document.getElementById("poolOne").style.display = "flex";
+  document.getElementById("poolTwo").style.display = "flex";
+  document.getElementById("poolThree").style.display = "flex";
+  document.getElementById("poolFour").style.display = "flex";
+  document.getElementById("poolFive").style.display = "flex";
+  document.getElementById("poolSix").style.display = "flex";
+}
