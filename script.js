@@ -2,7 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const scenarioLinks = document.querySelectorAll(".scenario-link");
   const scenarioContainer = document.getElementById("scenarioInfo");
   const generateButton = document.getElementById("genScenario");
-  const scenarioInfo = document.getElementById("scenarioTitle");
+  const scenarioTitle = document.getElementById("scenarioTitle");
+  let generationMethod = document.getElementById("generationMethod");
+  generationMethod.checked = false;
+  let genMethodSwitch = false;
 
   scenarioContainer.style.display = "none";
 
@@ -11,108 +14,34 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       let selectedScenario = this.getAttribute("data-scenario");
       loadScenario(selectedScenario);
-      scenarioTitle.scrollIntoView({ behavior: "smooth" });
     });
   });
 
-  // Listen for button blick and then generate the scenario.
-  generateButton.addEventListener("click", function (genScen) {
-    console.log("Generating scenario");
-    let scenarioPoolName = "";
-    // Basic RNG for pools. I would like to move these to a function and have a better RNG system.
-    let scenarioPool = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-    let scenarioNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
-    // Using a Switch statement vs an If statement for getting the scenario information
-    switch (scenarioPool) {
-      case 1:
-        scenarioPoolName = "Maelstrom of Battle";
-        switch (scenarioNum) {
-          case 1:
-            selectedScenario = "heirlooms";
-            break;
-          case 2:
-            selectedScenario = "hold_ground";
-            break;
-          case 3:
-            selectedScenario = "command_battlefield";
-            break;
-        }
-        break;
-      case 2:
-        scenarioPoolName = "Hold Objective";
-        switch (scenarioNum) {
-          case 1:
-            selectedScenario = "domination";
-            break;
-          case 2:
-            selectedScenario = "capture_control";
-            break;
-          case 3:
-            selectedScenario = "breakthrough";
-            break;
-        }
-        break;
-      case 3:
-        scenarioPoolName = "Object";
-        switch (scenarioNum) {
-          case 1:
-            selectedScenario = "seize_prize";
-            break;
-          case 2:
-            selectedScenario = "destroy_supplies";
-            break;
-          case 3:
-            selectedScenario = "retrieval";
-            break;
-        }
-        break;
-      case 4:
-        scenarioPoolName = "Kill the Enemy";
-        switch (scenarioNum) {
-          case 1:
-            selectedScenario = "lords_battle";
-            break;
-          case 2:
-            selectedScenario = "contest_champions";
-            break;
-          case 3:
-            selectedScenario = "death";
-            break;
-        }
-        break;
-      case 5:
-        scenarioPoolName = "Manoveuring";
-        switch (scenarioNum) {
-          case 1:
-            selectedScenario = "storm_camp";
-            break;
-          case 2:
-            selectedScenario = "reconnoitre";
-            break;
-          case 3:
-            selectedScenario = "divide_conquer";
-            break;
-        }
-        break;
-      case 6:
-        scenarioPoolName = "Unique";
-        switch (scenarioNum) {
-          case 1:
-            selectedScenario = "fog_of_war";
-            break;
-          case 2:
-            selectedScenario = "clash_moonlight";
-            break;
-          case 3:
-            selectedScenario = "assassination";
-            break;
-        }
-        break;
+  // CHecks for what generation method is being used
+
+  generationMethod.addEventListener("change", function () {
+    if (this.checked) {
+      console.log("Veto Mode Activated"); // True
+      genMethodSwitch = true;
+      scenarioContainer.style.display = "none";
+      document.getElementById("modeHeader").textContent = "Veto Method";
+      document.getElementById("headerText").textContent =
+        "The Veto method will randomly select a pool for the players to pick from. The player who loses the initiative roll in the scenario select phase will veto the first scenario. The winner will veto one of the two remaining scenarios, the scenario that was not veto'd is the scenario to be played.";
+      document.getElementById("genScenario").textContent = "Generate";
+    } else {
+      console.log("Random mode activated"); // False
+      genMethodSwitch = false;
+      scenarioContainer.style.display = "none";
+      document.getElementById("modeHeader").textContent = "Random Method";
+      document.getElementById("headerText").textContent =
+        "The Random method will randomly select a pool and scenario to be played by the players.";
     }
-    console.log(scenarioPoolName);
-    console.log(selectedScenario);
-    loadScenario(selectedScenario);
-    scenarioTitle.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("genScenario").textContent = "Generate";
+  });
+
+  // Listen for button blick and then generate the scenario.
+  generateButton.addEventListener("click", function () {
+    genScenario(generationMethod);
   });
 
   function loadScenario(scenarioKey) {
@@ -204,5 +133,164 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         scenarioTitle.scrollIntoView({ behavior: "smooth" });
       });
+  }
+
+  function genScenario() {
+    console.log("Generating scenario");
+    let scenarioPoolName = "";
+    // Basic RNG for pools. I would like to move these to a function and have a better RNG system.
+    let scenarioPool = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+    let scenarioNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+    // Using a Switch statement vs an If statement for getting the scenario information
+    if (genMethodSwitch === false) {
+      console.log("Random Generation");
+      switch (scenarioPool) {
+        case 1:
+          scenarioPoolName = "Maelstrom of Battle";
+          switch (scenarioNum) {
+            case 1:
+              selectedScenario = "heirlooms";
+              break;
+            case 2:
+              selectedScenario = "hold_ground";
+              break;
+            case 3:
+              selectedScenario = "command_battlefield";
+              break;
+          }
+          break;
+        case 2:
+          scenarioPoolName = "Hold Objective";
+          switch (scenarioNum) {
+            case 1:
+              selectedScenario = "domination";
+              break;
+            case 2:
+              selectedScenario = "capture_control";
+              break;
+            case 3:
+              selectedScenario = "breakthrough";
+              break;
+          }
+          break;
+        case 3:
+          scenarioPoolName = "Object";
+          switch (scenarioNum) {
+            case 1:
+              selectedScenario = "seize_prize";
+              break;
+            case 2:
+              selectedScenario = "destroy_supplies";
+              break;
+            case 3:
+              selectedScenario = "retrieval";
+              break;
+          }
+          break;
+        case 4:
+          scenarioPoolName = "Kill the Enemy";
+          switch (scenarioNum) {
+            case 1:
+              selectedScenario = "lords_battle";
+              break;
+            case 2:
+              selectedScenario = "contest_champions";
+              break;
+            case 3:
+              selectedScenario = "death";
+              break;
+          }
+          break;
+        case 5:
+          scenarioPoolName = "Manoveuring";
+          switch (scenarioNum) {
+            case 1:
+              selectedScenario = "storm_camp";
+              break;
+            case 2:
+              selectedScenario = "reconnoitre";
+              break;
+            case 3:
+              selectedScenario = "divide_conquer";
+              break;
+          }
+          break;
+        case 6:
+          scenarioPoolName = "Unique";
+          switch (scenarioNum) {
+            case 1:
+              selectedScenario = "fog_of_war";
+              break;
+            case 2:
+              selectedScenario = "clash_moonlight";
+              break;
+            case 3:
+              selectedScenario = "assassination";
+              break;
+          }
+          break;
+      }
+      console.log(scenarioPoolName);
+      console.log(selectedScenario);
+      loadScenario(selectedScenario);
+    } else if (genMethodSwitch === true) {
+      console.log("Veto Mode generation");
+      switch (scenarioPool) {
+        case 1:
+          scenarioPoolName = "Maelstrom of Battle";
+          console.log(scenarioPoolName);
+          document.getElementById("poolTwo").style.display = "none";
+          document.getElementById("poolThree").style.display = "none";
+          document.getElementById("poolFour").style.display = "none";
+          document.getElementById("poolFive").style.display = "none";
+          document.getElementById("poolSix").style.display = "none";
+          break;
+        case 2:
+          scenarioPoolName = "Hold Objective";
+          console.log(scenarioPoolName);
+          document.getElementById("poolOne").style.display = "none";
+          document.getElementById("poolThree").style.display = "none";
+          document.getElementById("poolFour").style.display = "none";
+          document.getElementById("poolFive").style.display = "none";
+          document.getElementById("poolSix").style.display = "none";
+          break;
+        case 3:
+          scenarioPoolName = "Object";
+          console.log(scenarioPoolName);
+          document.getElementById("poolOne").style.display = "none";
+          document.getElementById("poolTwo").style.display = "none";
+          document.getElementById("poolFour").style.display = "none";
+          document.getElementById("poolFive").style.display = "none";
+          document.getElementById("poolSix").style.display = "none";
+          break;
+        case 4:
+          scenarioPoolName = "Kill the Enemy";
+          console.log(scenarioPoolName);
+          document.getElementById("poolOne").style.display = "none";
+          document.getElementById("poolTwo").style.display = "none";
+          document.getElementById("poolThree").style.display = "none";
+          document.getElementById("poolFive").style.display = "none";
+          document.getElementById("poolSix").style.display = "none";
+          break;
+        case 5:
+          scenarioPoolName = "Manoveuring";
+          console.log(scenarioPoolName);
+          document.getElementById("poolOne").style.display = "none";
+          document.getElementById("poolTwo").style.display = "none";
+          document.getElementById("poolThree").style.display = "none";
+          document.getElementById("poolFour").style.display = "none";
+          document.getElementById("poolSix").style.display = "none";
+          break;
+        case 6:
+          scenarioPoolName = "Unique";
+          console.log(scenarioPoolName);
+          document.getElementById("poolOne").style.display = "none";
+          document.getElementById("poolTwo").style.display = "none";
+          document.getElementById("poolThree").style.display = "none";
+          document.getElementById("poolFour").style.display = "none";
+          document.getElementById("poolFive").style.display = "none";
+          break;
+      }
+    }
   }
 });

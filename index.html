@@ -11,25 +11,24 @@
     <div class="container">
       <!-- This is div contains the header information for the page. This should not be adjusted by the page.-->
       <div class="headerDiv">
-        <h1>The Pools</h1>
-        <div class="buttonContainer" style="display: none">
-          random<input type="checkbox" id="randomVetoCheck" /><label
-            for="randomVetoCheck"
-            class="randomVeto"
+        <h1>MESBG Scenario Picker</h1>
+        <h2 id="modeHeader">Random Method</h2>
+        <div class="buttonContainer">
+          Random<input type="checkbox" id="generationMethod" /><label
+            for="generationMethod"
+            class="generationMethod"
           ></label
-          >veto
+          >Veto
         </div>
-        <p class="headerText">
-          At the start of each round, roll a D6 to determine which of the pools
-          will be used, then a D3/D6 to determine which of the 3 Scenarios from
-          that pool will be played. After this has been decided, remove the
-          entire pool from the selection process.
+        <p id="headerText">
+          The Random method will randomly select a pool and scenario to be
+          played by the players.
         </p>
       </div>
       <div class="selectorContainer">
-        <button id="genScenario">Click here to Generate Scenario</button>
+        <button id="genScenario">Generate</button>
       </div>
-      <div class="scenarioPools">
+      <div id="scenarioPools">
         <!--This has the Pools and the scenarions in reach respective pool. Each scenario can be clicked on to pull up the 
         scenario. Once a scenario has been pulled up, the pool div should be minimized and replaced by the scenario info section-->
         <div id="poolOne" class="poolBox">
