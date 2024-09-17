@@ -72,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
           scenario.scenario_priority;
         document.getElementById("scenario-ObjectivesText").textContent =
           scenario.scenario_objectives;
+        document.getElementById("scenarioDeployment").src =
+          scenario.scnenario_image;
 
         vpUl.innerHTML = "";
         specialRuleUL.innerHTML = "";

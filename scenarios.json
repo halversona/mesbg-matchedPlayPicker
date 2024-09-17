@@ -9,7 +9,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game, but will enter as the game continues (see Special Rules).",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/heirloom.png",
       "scenario_scoringVP": [
         "You score 6 Victory Points if your force is in possession of the relic at the end of the game. If at the end of the game you are not in possession of the relic but have more models within 3 of the relic than your opponent, then you instead score 3 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader. Wounds prevented by a successful Fate roll do not count. If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -30,7 +30,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game, but will enter as the game continues (see Special Rules later).",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn, after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/holdGround.png",
       "scenario_scoringVP": [
         "You score 3 Victory Points if you have more models within 6 of the Objective marker than your opponent. If you have twice as many models within 6 of the Objective than your opponent, then you instead score 5 Victory Points. If you have three times as many models within 6 of the Objective than your opponent, or you are the only player to have models within 6 of the Objective marker, then you instead score 7 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -47,7 +47,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game, but will enter as the game continues (see Special Rules later).",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/Command.png",
       "scenario_scoringVP": [
         "You score 1 Victory Point for each quarter of the board that has more friendly models than enemy models wholly within it. For each quarter of the board that has at least double the number of models wholly within it than your opponent, you instead score 2 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -64,7 +64,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge as described above. Players then alternate until all warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/seizePrize.png",
       "scenario_scoringVP": [
         "You score 3 Victory Points if one of your models is carrying the artefact within your own board half. If one of your models is carrying the artefact within your opponent’s board half, then you instead score 5 Victory Points. If one of your models is carrying the artefact and manages to move off the board via your opponent’s board edge, then you instead score 7 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader. Wounds prevented by a successful Fate roll do not count. If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -81,7 +81,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge, as described above. Players then alternate until all of their warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/destroyTheSupplies.png",
       "scenario_scoringVP": [
         "You score 2 Victory Points for each enemy supply marker that has been destroyed.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -99,7 +99,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the corners of the board, and their opponent automatically has the opposite. A line is then drawn between the two chosen corners, and both players then place a single Objective marker 15 away from their corner along this line – this is their own relic. The board is then split into two halves diagonally between the two corners that were not chosen, forming two deployment zones. The player who scored the highest then selects a warband in their force to deploy in their deployment zone, but not within 3 of the line that runs diagonally through the centre of the board. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player deploys one of their warbands in their deployment zone as described above. Players then alternate until all of their warbands have been placed..",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/retrieval.png",
       "scenario_scoringVP": [
         "You score 1 Victory Point if your opponent’s relic has moved from its original position at the end of the game. If you have retrieved your opponent’s relic, you instead score 3 Victory Points. If you have retrieved your opponent’s relic, and the model holding it is in your deployment zone, you instead score 5 Victory Points. If you have retrieved your opponent’s relic, and managed to move it off the board via either of the board edges in your deployment zone, you instead score 7 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -116,7 +116,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 24 of their board edge but at least 1 away from enemy models. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 24 of their board edge as described above. Players then alternate until all warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/lordsOfBattle.png",
       "scenario_scoringVP": [
         "For this Scenario you need to keep track of your Wound Tally. Your Wound Tally is equal to the number of Wounds that your army inflicted upon your opponent’s army, plus any Fate points that your opponent pent. Hero models that are removed from the game with unspent Fate points will add 1 to the Wound Tally for each one unspent. Models that flee because their force is Broken count towards the Wound Tally, but mounts that flee do not. You score 3 Victory Points if your Wound Tally is greater than your opponent’s. If your Wound Tally is at least twice as large as your opponent’s, then you instead score 5 Victory Points. If your Wound Tally is at least three times as large as your opponent’s, or your opponent has no models left on the board, then you instead score 7 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -133,7 +133,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They place their leader within their deployment zone and within 3 of the centre of the board and then deploy their leader’s warband in their deployment zone and within 6 of the leader. Their opponent then does the same. Players then take it in turns (starting with the player who rolled highest) to select a warband in their force and roll a D6. On a 1-3, all models in that warband must be deployed in the deployment zone and within 12 of the centre line of the board. On a 4-6, the models can be deployed anywhere in the deployment zone. Models may not be placed within 1 of an enemy model. Regardless of the dice roll, models may not be deployed further than 6 from the captain of their warband. Players alternate until all warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/ContestOfChampions.png",
       "scenario_scoringVP": [
         "Keep a count of how many kills your leader scores in combat throughout the course of the battle. Note, kills caused by shooting, Magical Powers or the Hurl Brutal Power Attack do not count towards your leader’s score. You score 3 Victory Points if your leader has killed more models than your opponent’s leader. If your leader has killed at least two models and at least twice as many as your opponent’s leader, then you instead score 5 Victory Points. If your leader has killed at least three models and at least three times as many as your opponent’s leader, then you instead score 7 Victory Points.",
         "You score 1 Victory Point if your leader causes one or more Wounds on the enemy leader. Wounds prevented by a successful Fate roll do not count. If your leader kills the enemy leader, you instead score 3 Victory Points.",
@@ -150,7 +150,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge, as described above. Players then alternate until all warbands have been placed..",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/toTheDeath.png",
       "scenario_scoringVP": [
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 3 Victory Points.",
         "You score 3 Victory Points if the enemy force is Broken at the end of the game. If the enemy force is Broken and your force is unbroken, you instead score 5 Victory Points.",
@@ -168,7 +168,7 @@
       "scenario_startingPOS": "Both players roll a D6. The player who scored the highest may choose one of the four table corners as their camp. They then deploy their army (including any Siege Engines) entirely within 12 of their chosen table corner. Any models that cannot be deployed within 12 of the chosen corner will move onto the board via the controlling player’s corner at the end of their first Move phase. Their opponent then sets up their army entirely within 12 of the table corner diagonally opposite.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/stormTheCamp.png",
       "scenario_scoringVP": [
         "You score 3 Victory Points if your force managed to capture your opponent’s camp. If your force managed to capture your opponent’s camp and your camp is not captured, you instead score 6 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader. Wounds prevented by a successful Fate roll do not count. If you kill the enemy leader, you instead score 3 Victory Points.",
@@ -185,7 +185,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game. Both players roll a D6. The player with the highest result chooses one of the long table edges to be their board edge – the opposing player has the opposite board edge as their board edge (see Special Rules later).",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models, or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw. Models that have escaped the board count as being on the board for the purpose of determining if a force is Broken.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/recconoitre.png",
       "scenario_scoringVP": [
         "You score 3 Victory Points if more of your models have escaped the battlefield via your opponent’s board edge than vice versa. If at least two of your models and twice as many models than your opponent have escaped the board, then you instead score 5 Victory Points. If at least three of your models, and three times as many models than your opponent have escaped the board, then you instead score 7 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader – Wounds prevented by a successful Fate roll do not count. If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -202,7 +202,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest score chooses two opposite corners to be their deployment zones, and labels them A and B. Their opponent has the other two corners and labels them A and B. The player who scored highest then deploys one of their warbands anywhere within 12 of their corner A. The other player then does the same. The player that scored highest then deploys one of their warbands anywhere within 12 of corner B. The other player then deploys the same. Players then repeat the process above until all warbands have been deployed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/divideAndConqueor.png",
       "scenario_scoringVP": [
         "ou score 3 Victory Points if there are more friendly models than enemy models within 3 of the central Objective. If there is at least one friendly model, and no enemy models, within 3 of this Objective, you instead score 5 Victory Points.",
         "For each of the other Objectives, you score 1 Victory Point if there are more friendly models than enemy models within 3 of the Objective. If there is at least one friendly model, and no enemy models, within 3 of this Objective, you instead score 2 Victory Points.",
@@ -220,7 +220,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge as described above. Players then alternate until all warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/fogOfWar.png",
       "scenario_scoringVP": [
         "At the start of the game secretly note down one of your own Hero models – this may not be your leader unless you only have one Hero. You score 1 Victory Point if the nominated Hero is still alive at the end of the game. If the nominated Hero is still alive and has suffered no Wounds, you instead score 3 Victory Points.",
         "At the start of the game secretly note down one of your opponent’s Hero models – this may not be your opponent’s leader unless they only have one Hero. You score 1 Victory Point for causing one or more Wounds on the nominated Hero. Wounds prevented by a successful Fate roll do not count. If you kill the nominated Hero, you instead score 3 Victory Points.",
@@ -239,7 +239,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge as described above. Players then alternate until all warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/clashByMoonlight.png",
       "scenario_scoringVP": [
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader. Wounds prevented by a successful Fate roll do not count. If you kill the enemy leader, you instead score 2 Victory Points.",
         "You score 3 Victory Points if the enemy force is Broken at the end of the game. If the enemy force is Broken and your force is unbroken, you instead score 5 Victory Points.",
@@ -256,7 +256,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 24 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 24 of their board edge, as described above. Players then alternate until all of their warbands have been placed..",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/assassination.png",
       "scenario_scoringVP": [
         " You score 1 Victory Point if your target has suffered one or more Wounds. If your target has suffered one or more Wounds, and your assassin caused at least one Wound, you instead score 3 Victory Points. If your target has been slain, you instead score 5 Victory Points. If your target has been slain, and your assassin caused the fatal Wound, you instead score 7 Victory Points.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader (Wounds prevented by a successful Fate roll do not count). If you kill the enemy leader, you instead score 2 Victory Points.",
@@ -273,7 +273,7 @@
       "scenario_startingPOS": "oth players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 24 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 24 of their board edge, as described above. Players then alternate until all of their warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/domination.png",
       "scenario_scoringVP": [
         "You score 2 Victory Points for each Objective marker that has at least one of your models, and no enemy models, within 3.",
         "You score 1 Victory Point for each Objective marker that has both friendly and enemy models, but more friendly than enemy models, within 3",
@@ -291,7 +291,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game, but will enter as the game continues (see Special Rules later).",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn, after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/captureAndControl.png",
       "scenario_scoringVP": [
         "You score 2 Victory Points for each Objective marker that is under your control at the end of the game.",
         "You score 1 Victory Point for causing one or more Wounds on the enemy leader or if you kill the enemy leader. Wounds prevented by a successful Fate roll do not count.",
@@ -308,7 +308,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 24 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 24 of their board edge, as described above. Players then alternate until all of their warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "",
+      "scnenario_image": "./deployment/breakthrough.png",
       "scenario_scoringVP": [
         "You score 1 Victory Point if there are more friendly models than enemy models within 3 of the Objective in your own deployment zone.",
         "or each Objective on the centreline of the board, you score 1 Victory Point if there are more friendly models than enemy models within 3 of the Objective. If there is at least one friendly model, and no enemy models, within 3 of this Objective, you instead score 2 Victory Points.",

@@ -14,7 +14,11 @@ h3 {
 #scenarioInfo {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 310px;
+}
+
+img {
+  max-width: 310px;
 }
 
 #scenarioPools {
@@ -112,6 +116,7 @@ a {
     margin: 0 0 5px 0;
     color: darkred;
   }
+
   .headerText {
     padding: 0 10px;
   }
@@ -119,7 +124,7 @@ a {
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 890px;
+    max-width: 800px;
     margin: 0;
   }
 
