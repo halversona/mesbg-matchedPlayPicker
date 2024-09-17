@@ -245,71 +245,70 @@ document.addEventListener("DOMContentLoaded", function () {
         case 1:
           scenarioPoolName = "Maelstrom of Battle";
           console.log(scenarioPoolName);
-          document.getElementById("poolTwo").style.display = "none";
-          document.getElementById("poolThree").style.display = "none";
-          document.getElementById("poolFour").style.display = "none";
-          document.getElementById("poolFive").style.display = "none";
-          document.getElementById("poolSix").style.display = "none";
+          document.getElementById("poolTwo").classList.add("hidden");
+          document.getElementById("poolThree").classList.add("hidden");
+          document.getElementById("poolFour").classList.add("hidden");
+          document.getElementById("poolFive").classList.add("hidden");
+          document.getElementById("poolSix").classList.add("hidden");
           break;
         case 2:
           scenarioPoolName = "Hold Objective";
           console.log(scenarioPoolName);
-          document.getElementById("poolOne").style.display = "none";
-          document.getElementById("poolThree").style.display = "none";
-          document.getElementById("poolFour").style.display = "none";
-          document.getElementById("poolFive").style.display = "none";
-          document.getElementById("poolSix").style.display = "none";
+          document.getElementById("poolOne").classList.add("hidden");
+          document.getElementById("poolThree").classList.add("hidden");
+          document.getElementById("poolFour").classList.add("hidden");
+          document.getElementById("poolFive").classList.add("hidden");
+          document.getElementById("poolSix").classList.add("hidden");
           break;
         case 3:
           scenarioPoolName = "Object";
           console.log(scenarioPoolName);
-          document.getElementById("poolOne").style.display = "none";
-          document.getElementById("poolTwo").style.display = "none";
-          document.getElementById("poolFour").style.display = "none";
-          document.getElementById("poolFive").style.display = "none";
-          document.getElementById("poolSix").style.display = "none";
+          document.getElementById("poolOne").classList.add("hidden");
+          document.getElementById("poolTwo").classList.add("hidden");
+          document.getElementById("poolFour").classList.add("hidden");;
+          document.getElementById("poolFive").classList.add("hidden");
+          document.getElementById("poolSix").classList.add("hidden");
           break;
         case 4:
           scenarioPoolName = "Kill the Enemy";
           console.log(scenarioPoolName);
-          document.getElementById("poolOne").style.display = "none";
-          document.getElementById("poolTwo").style.display = "none";
-          document.getElementById("poolThree").style.display = "none";
-          document.getElementById("poolFive").style.display = "none";
-          document.getElementById("poolSix").style.display = "none";
+          document.getElementById("poolOne").classList.add("hidden");
+          document.getElementById("poolTwo").classList.add("hidden");
+          document.getElementById("poolThree").classList.add("hidden");
+          document.getElementById("poolFive").classList.add("hidden");
+          document.getElementById("poolSix").classList.add("hidden");
           break;
         case 5:
           scenarioPoolName = "Manoveuring";
           console.log(scenarioPoolName);
-          document.getElementById("poolOne").style.display = "none";
-          document.getElementById("poolTwo").style.display = "none";
-          document.getElementById("poolThree").style.display = "none";
-          document.getElementById("poolFour").style.display = "none";
-          document.getElementById("poolSix").style.display = "none";
+          document.getElementById("poolOne").classList.add("hidden");
+          document.getElementById("poolTwo").classList.add("hidden");
+          document.getElementById("poolThree").classList.add("hidden");
+          document.getElementById("poolFour").classList.add("hidden");
+          document.getElementById("poolSix").classList.add("hidden");
           break;
         case 6:
           scenarioPoolName = "Unique";
           console.log(scenarioPoolName);
-          document.getElementById("poolOne").style.display = "none";
-          document.getElementById("poolTwo").style.display = "none";
-          document.getElementById("poolThree").style.display = "none";
-          document.getElementById("poolFour").style.display = "none";
-          document.getElementById("poolFive").style.display = "none";
+          document.getElementById("poolOne").classList.add("hidden");
+          document.getElementById("poolTwo").classList.add("hidden");
+          document.getElementById("poolThree").classList.add("hidden");
+          document.getElementById("poolFour").classList.add("hidden");
+          document.getElementById("poolFive").classList.add("hidden");
           break;
       }
-      document.getElementById("scenarioPools").style.gridTemplateColumns =
-        "300px";
+      // This needs to be adjusted.
+      document.getElementById("scenarioPools").classList.add("selected");
     }
   }
 });
 
 function resetScenarios() {
-  document.getElementById("scenarioPools").style.gridTemplateColumns =
-    "300px 300px 300px";
-  document.getElementById("poolOne").style.display = "flex";
-  document.getElementById("poolTwo").style.display = "flex";
-  document.getElementById("poolThree").style.display = "flex";
-  document.getElementById("poolFour").style.display = "flex";
-  document.getElementById("poolFive").style.display = "flex";
-  document.getElementById("poolSix").style.display = "flex";
+  document.getElementById("scenarioPools").classList.remove("selected");
+  document.getElementById("poolOne").classList.remove("hidden");
+  document.getElementById("poolTwo").classList.remove("hidden");
+  document.getElementById("poolThree").classList.remove("hidden");
+  document.getElementById("poolFour").classList.remove("hidden");
+  document.getElementById("poolFive").classList.remove("hidden");
+  document.getElementById("poolSix").classList.remove("hidden");
 }

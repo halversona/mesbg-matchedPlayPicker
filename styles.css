@@ -28,6 +28,18 @@ img {
   align-items: center;
 }
 
+#scenarioPools.selected {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-auto-rows: 150px;
+  align-items: center;
+}
+
+#scenarioPools.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -101,6 +113,36 @@ a {
   color: black;
 }
 
+#poolOne.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#poolTwo.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#poolThree.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#poolFour.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#poolFive.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#poolSix.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -135,6 +177,18 @@ a {
     align-items: center;
   }
 
+  #scenarioPools.selected {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-auto-rows: 150px;
+    align-items: center;
+  }
+
+  #scenarioPools.hidden {
+    display: none;
+    visibility: hidden;
+  }
+
   .scenarioGrid {
     display: grid;
     margin-right: 55px;
@@ -151,6 +205,36 @@ a {
     margin: 5px;
     padding: 0 15px;
     align-items: center;
+  }
+
+  #poolOne.hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  #poolTwo.hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  #poolThree.hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  #poolFour.hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  #poolFive.hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  #poolSix.hidden {
+    display: none;
+    visibility: hidden;
   }
 
   .headerDiv {
