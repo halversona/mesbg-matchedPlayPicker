@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const scenarioTitle = document.getElementById("scenarioTitle");
   let generationMethod = document.getElementById("generationMethod");
   generationMethod.checked = false;
+  editionChecker.checked = true;
   let genMethodSwitch = false;
+  editionScenarios = "scenarios2024.json";
 
   scenarioContainer.style.display = "none";
 
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   generationMethod.addEventListener("change", function () {
     if (this.checked) {
       console.log("Veto Mode Activated"); // True
-      genMethodSwitch = true;
+      generationMethod.checked = true;
       scenarioContainer.style.display = "none";
       document.getElementById("modeHeader").textContent = "Veto Method";
       document.getElementById("headerText").textContent =
@@ -31,23 +33,52 @@ document.addEventListener("DOMContentLoaded", function () {
       resetScenarios();
     } else {
       console.log("Random mode activated"); // False
-      genMethodSwitch = false;
+      generationMethod.checked = false;
       scenarioContainer.style.display = "none";
       document.getElementById("modeHeader").textContent = "Random Method";
       document.getElementById("headerText").textContent =
         "The Random method will randomly select a pool and scenario to be played by the players.";
+      resetScenarios();
     }
     document.getElementById("genScenario").textContent = "Generate";
     resetScenarios();
   });
 
-  // Listen for button blick and then generate the scenario.
+  // Checks for what edition is being played
+  editionChecker.addEventListener("change", function () {
+    if (this.checked) {
+      console.log("2024 Edition Checked"); // True
+      editionChecker.checked = true;
+      document.getElementById("scenarioPools2024").classList.remove("hidden");
+      document.getElementById("scenarioPools").classList.add("hidden");
+      scenarioContainer.style.display = "none";
+      resetScenarios();
+    } else {
+      console.log("Old Edition Checked"); // False
+      editionChecker.checked = false;
+      document.getElementById("scenarioPools2024").classList.add("hidden");
+      document.getElementById("scenarioPools").classList.remove("hidden");
+      scenarioContainer.style.display = "none";
+      resetScenarios();
+    }
+    resetScenarios();
+  });
+
+  // Listen for button click and then generate the scenario.
   generateButton.addEventListener("click", function () {
     genScenario(generationMethod);
   });
 
   function loadScenario(scenarioKey) {
-    fetch("scenarios.json")
+    if (editionChecker === false) {
+      editionScenarios = "scenarios.json";
+      console.log(editionScenarios);
+    }
+    if (editionChecker === true) {
+      editionScenarios = "scenarios2024.json";
+    }
+    console.log(editionScenarios);
+    fetch(editionScenarios)
       .then((response) => response.json())
       .then((data) => {
         const scenario = data.scenarios[scenarioKey];
@@ -146,7 +177,103 @@ document.addEventListener("DOMContentLoaded", function () {
     let scenarioPool = Math.floor(Math.random() * (6 - 1 + 1) + 1);
     let scenarioNum = Math.floor(Math.random() * (3 - 1 + 1) + 1);
     // Using a Switch statement vs an If statement for getting the scenario information
-    if (genMethodSwitch === false) {
+    if (generationMethod.checked) {
+      console.log("Veto Mode generation");
+      // This feels excessive to reset this. I need a better option.
+      resetScenarios();
+      console.log(editionChecker);
+      if (editionChecker.checked) {
+        console.log("Veto 2024 edition");
+        // Hiding the scenarios and they will be revealed once the scenarios are selected by RNG.
+        document.getElementById("2024_holdGround").classList.add("hidden");
+        document.getElementById("2024_domination").classList.add("hidden");
+        document.getElementById("2024_destroySupplies").classList.add("hidden");
+        document.getElementById("2024_death").classList.add("hidden");
+        document.getElementById("2024_recon").classList.add("hidden");
+        document.getElementById("2024_fogOfWar").classList.add("hidden");
+        let vetoScenario1 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        console.log(vetoScenario1);
+        vetoSelection2024(vetoScenario1);
+        let vetoScenario2 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        // Getting Scenario 2 while making sure it doesnt match scenario 1
+        while (vetoScenario2 == vetoScenario1) {
+          vetoScenario2 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        }
+        console.log(vetoScenario2);
+        vetoSelection2024(vetoScenario2);
+        // Getting scenario 3 and making sure it doesnt match scenario 1 and 2
+        let vetoScenario3 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        while (
+          vetoScenario3 == vetoScenario2 ||
+          vetoScenario3 == vetoScenario1
+        ) {
+          vetoScenario3 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        }
+        console.log(vetoScenario3);
+        vetoSelection2024(vetoScenario3);
+      } else {
+        // This is the veto method for the old edition
+        console.log("Edition check 1");
+        switch (scenarioPool) {
+          case 1:
+            scenarioPoolName = "Maelstrom of Battle";
+            console.log(scenarioPoolName);
+            document.getElementById("poolTwo").classList.add("hidden");
+            document.getElementById("poolThree").classList.add("hidden");
+            document.getElementById("poolFour").classList.add("hidden");
+            document.getElementById("poolFive").classList.add("hidden");
+            document.getElementById("poolSix").classList.add("hidden");
+            break;
+          case 2:
+            scenarioPoolName = "Hold Objective";
+            console.log(scenarioPoolName);
+            document.getElementById("poolOne").classList.add("hidden");
+            document.getElementById("poolThree").classList.add("hidden");
+            document.getElementById("poolFour").classList.add("hidden");
+            document.getElementById("poolFive").classList.add("hidden");
+            document.getElementById("poolSix").classList.add("hidden");
+            break;
+          case 3:
+            scenarioPoolName = "Object";
+            console.log(scenarioPoolName);
+            document.getElementById("poolOne").classList.add("hidden");
+            document.getElementById("poolTwo").classList.add("hidden");
+            document.getElementById("poolFour").classList.add("hidden");
+            document.getElementById("poolFive").classList.add("hidden");
+            document.getElementById("poolSix").classList.add("hidden");
+            break;
+          case 4:
+            scenarioPoolName = "Kill the Enemy";
+            console.log(scenarioPoolName);
+            document.getElementById("poolOne").classList.add("hidden");
+            document.getElementById("poolTwo").classList.add("hidden");
+            document.getElementById("poolThree").classList.add("hidden");
+            document.getElementById("poolFive").classList.add("hidden");
+            document.getElementById("poolSix").classList.add("hidden");
+            break;
+          case 5:
+            scenarioPoolName = "Manoveuring";
+            console.log(scenarioPoolName);
+            document.getElementById("poolOne").classList.add("hidden");
+            document.getElementById("poolTwo").classList.add("hidden");
+            document.getElementById("poolThree").classList.add("hidden");
+            document.getElementById("poolFour").classList.add("hidden");
+            document.getElementById("poolSix").classList.add("hidden");
+            break;
+          case 6:
+            scenarioPoolName = "Unique";
+            console.log(scenarioPoolName);
+            document.getElementById("poolOne").classList.add("hidden");
+            document.getElementById("poolTwo").classList.add("hidden");
+            document.getElementById("poolThree").classList.add("hidden");
+            document.getElementById("poolFour").classList.add("hidden");
+            document.getElementById("poolFive").classList.add("hidden");
+            break;
+        }
+      }
+      // This needs to be adjusted.
+      document.getElementById("scenarioPools").classList.add("selected");
+    } else {
       console.log("Random Generation");
       switch (scenarioPool) {
         case 1:
@@ -237,73 +364,12 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(scenarioPoolName);
       console.log(selectedScenario);
       loadScenario(selectedScenario);
-    } else if (genMethodSwitch === true) {
-      console.log("Veto Mode generation");
-      // This feels excessive to reset this. I need a better option.
-      resetScenarios();
-      switch (scenarioPool) {
-        case 1:
-          scenarioPoolName = "Maelstrom of Battle";
-          console.log(scenarioPoolName);
-          document.getElementById("poolTwo").classList.add("hidden");
-          document.getElementById("poolThree").classList.add("hidden");
-          document.getElementById("poolFour").classList.add("hidden");
-          document.getElementById("poolFive").classList.add("hidden");
-          document.getElementById("poolSix").classList.add("hidden");
-          break;
-        case 2:
-          scenarioPoolName = "Hold Objective";
-          console.log(scenarioPoolName);
-          document.getElementById("poolOne").classList.add("hidden");
-          document.getElementById("poolThree").classList.add("hidden");
-          document.getElementById("poolFour").classList.add("hidden");
-          document.getElementById("poolFive").classList.add("hidden");
-          document.getElementById("poolSix").classList.add("hidden");
-          break;
-        case 3:
-          scenarioPoolName = "Object";
-          console.log(scenarioPoolName);
-          document.getElementById("poolOne").classList.add("hidden");
-          document.getElementById("poolTwo").classList.add("hidden");
-          document.getElementById("poolFour").classList.add("hidden");;
-          document.getElementById("poolFive").classList.add("hidden");
-          document.getElementById("poolSix").classList.add("hidden");
-          break;
-        case 4:
-          scenarioPoolName = "Kill the Enemy";
-          console.log(scenarioPoolName);
-          document.getElementById("poolOne").classList.add("hidden");
-          document.getElementById("poolTwo").classList.add("hidden");
-          document.getElementById("poolThree").classList.add("hidden");
-          document.getElementById("poolFive").classList.add("hidden");
-          document.getElementById("poolSix").classList.add("hidden");
-          break;
-        case 5:
-          scenarioPoolName = "Manoveuring";
-          console.log(scenarioPoolName);
-          document.getElementById("poolOne").classList.add("hidden");
-          document.getElementById("poolTwo").classList.add("hidden");
-          document.getElementById("poolThree").classList.add("hidden");
-          document.getElementById("poolFour").classList.add("hidden");
-          document.getElementById("poolSix").classList.add("hidden");
-          break;
-        case 6:
-          scenarioPoolName = "Unique";
-          console.log(scenarioPoolName);
-          document.getElementById("poolOne").classList.add("hidden");
-          document.getElementById("poolTwo").classList.add("hidden");
-          document.getElementById("poolThree").classList.add("hidden");
-          document.getElementById("poolFour").classList.add("hidden");
-          document.getElementById("poolFive").classList.add("hidden");
-          break;
-      }
-      // This needs to be adjusted.
-      document.getElementById("scenarioPools").classList.add("selected");
     }
   }
 });
 
 function resetScenarios() {
+  console.log("Resetting scenarios");
   document.getElementById("scenarioPools").classList.remove("selected");
   document.getElementById("poolOne").classList.remove("hidden");
   document.getElementById("poolTwo").classList.remove("hidden");
@@ -311,4 +377,36 @@ function resetScenarios() {
   document.getElementById("poolFour").classList.remove("hidden");
   document.getElementById("poolFive").classList.remove("hidden");
   document.getElementById("poolSix").classList.remove("hidden");
+  document.getElementById("scenarioPools2024").classList.remove("selected");
+  document.getElementById("2024_holdGround").classList.remove("hidden");
+  document.getElementById("2024_domination").classList.remove("hidden");
+  document.getElementById("2024_destroySupplies").classList.remove("hidden");
+  document.getElementById("2024_death").classList.remove("hidden");
+  document.getElementById("2024_recon").classList.remove("hidden");
+  document.getElementById("2024_fogOfWar").classList.remove("hidden");
+}
+
+function vetoSelection2024(scenarioNumber) {
+  switch (scenarioNumber) {
+    case 1:
+      document.getElementById("2024_holdGround").classList.remove("hidden");
+      break;
+    case 2:
+      document.getElementById("2024_domination").classList.remove("hidden");
+      break;
+    case 3:
+      document
+        .getElementById("2024_destroySupplies")
+        .classList.remove("hidden");
+      break;
+    case 4:
+      document.getElementById("2024_death").classList.remove("hidden");
+      break;
+    case 5:
+      document.getElementById("2024_recon").classList.remove("hidden");
+      break;
+    case 6:
+      document.getElementById("2024_fogOfWar").classList.remove("hidden");
+      break;
+  }
 }

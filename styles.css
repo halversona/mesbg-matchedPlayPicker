@@ -21,32 +21,47 @@ img {
   max-width: 310px;
 }
 
-#scenarioPools {
+#scenarioPools,
+#scenarioPools2024 {
   display: grid;
   grid-template-columns: 300px;
   grid-auto-rows: 150px;
   align-items: center;
 }
 
-#scenarioPools.selected {
+#scenarioPools2024 {
+  margin-top: 16.5px;
+  margin-bottom: 16.5px;
+}
+
+#scenarioPools.selected,
+#scenarioPools2024.selected {
   display: grid;
   grid-template-columns: 300px;
   grid-auto-rows: 150px;
   align-items: center;
 }
 
-#scenarioPools.hidden {
+#scenarioPools.hidden,
+#scenarioPools2024.hidden {
   display: none;
   visibility: hidden;
 }
 
 .buttonContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 60px 90px 60px;
 }
 
-.generationMethod {
+.selectorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.generationMethod,
+.editionChecker {
   background-color: lightgrey;
   width: 50px;
   height: 25px;
@@ -57,7 +72,8 @@ img {
   transition: 0.2s;
 }
 
-.generationMethod::before {
+.generationMethod::before,
+.editionChecker::before {
   position: absolute;
   content: " ";
   background-color: darkred;
@@ -73,6 +89,14 @@ input:checked + .generationMethod {
 }
 
 input:checked + .generationMethod::before {
+  transform: translatex(25px);
+}
+
+input:checked + .editionChecker {
+  background-color: gray;
+}
+
+input:checked + .editionChecker::before {
   transform: translatex(25px);
 }
 
@@ -113,34 +137,9 @@ a {
   color: black;
 }
 
-#poolOne.hidden {
+.hidden {
   display: none;
-  visibility: hidden;
-}
-
-#poolTwo.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-#poolThree.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-#poolFour.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-#poolFive.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-#poolSix.hidden {
-  display: none;
-  visibility: hidden;
+  visibility: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -177,14 +176,24 @@ a {
     align-items: center;
   }
 
-  #scenarioPools.selected {
+  #scenarioPools2024 {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 300px;
     grid-auto-rows: 150px;
     align-items: center;
   }
 
-  #scenarioPools.hidden {
+  #scenarioPools.selected,
+  #scenarioPools2024.selected {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-auto-rows: 150px;
+    align-items: center;
+  }
+
+  #scenarioPools.hidden,
+  #scenarioPools2024.hidden {
     display: none;
     visibility: hidden;
   }
@@ -207,31 +216,36 @@ a {
     align-items: center;
   }
 
+  #2024_holdGround.hidden {
+    display: none;
+    visibility: none;
+  }
+
   #poolOne.hidden {
     display: none;
     visibility: hidden;
   }
-  
+
   #poolTwo.hidden {
     display: none;
     visibility: hidden;
   }
-  
+
   #poolThree.hidden {
     display: none;
     visibility: hidden;
   }
-  
+
   #poolFour.hidden {
     display: none;
     visibility: hidden;
   }
-  
+
   #poolFive.hidden {
     display: none;
     visibility: hidden;
   }
-  
+
   #poolSix.hidden {
     display: none;
     visibility: hidden;

@@ -20,6 +20,13 @@
           ></label
           >Veto
         </div>
+        <div class="buttonContainer">
+          Old<input type="checkbox" id="editionChecker" /><label
+            for="editionChecker"
+            class="editionChecker"
+          ></label
+          >2024
+        </div>
         <p id="headerText">
           The Random method will randomly select a pool and scenario to be
           played by the players.
@@ -28,7 +35,7 @@
       <div class="selectorContainer">
         <button id="genScenario">Generate</button>
       </div>
-      <div id="scenarioPools">
+      <div id="scenarioPools" class="hidden">
         <!--This has the Pools and the scenarions in reach respective pool. Each scenario can be clicked on to pull up the 
         scenario. Once a scenario has been pulled up, the pool div should be minimized and replaced by the scenario info section-->
         <div id="poolOne" class="poolBox">
@@ -159,6 +166,45 @@
             <li>
               <a href="#" class="scenario-link" data-scenario="assassination"
                 >Assassination</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="scenarioPools2024">
+        <!--This has the Pools and the scenarions in reach respective pool. Each scenario can be clicked on to pull up the 
+        scenario. Once a scenario has been pulled up, the pool div should be minimized and replaced by the scenario info section-->
+        <div id="pool2024" class="poolBox">
+          <h2>Scenario Pool</h2>
+          <ul class="linkTree">
+            <li id="2024_holdGround">
+              <a href="#" class="scenario-link" data-scenario="hold_ground"
+                >Hold Ground</a
+              >
+            </li>
+            <li id="2024_domination">
+              <a href="#" class="scenario-link" data-scenario="domination"
+                >Domination</a
+              >
+            </li>
+            <li id="2024_destroySupplies">
+              <a href="#" class="scenario-link" data-scenario="destroy_supplies"
+                >Destroy the Supplies</a
+              >
+            </li>
+            <li id="2024_death">
+              <a href="#" class="scenario-link" data-scenario="death"
+                >To the Death!</a
+              >
+            </li>
+            <li id="2024_recon">
+              <a href="#" class="scenario-link" data-scenario="reconnoitre"
+                >Reconnoitre</a
+              >
+            </li>
+            <li id="2024_fogOfWar">
+              <a href="#" class="scenario-link" data-scenario="fog_of_war"
+                >Fog of War</a
               >
             </li>
           </ul>
