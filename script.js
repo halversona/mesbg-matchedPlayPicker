@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   generationMethod.checked = false;
   editionChecker.checked = true;
   let genMethodSwitch = false;
-  editionScenarios = "scenarios2024.json";
+  let editionScenarios = "scenarios2024.json";
 
   scenarioContainer.style.display = "none";
 
@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (this.checked) {
       console.log("2024 Edition Checked"); // True
       editionChecker.checked = true;
+      editionScenarios = "scenarios2024.json";
+      console.log(editionScenarios);
       document.getElementById("scenarioPools2024").classList.remove("hidden");
       document.getElementById("scenarioPools").classList.add("hidden");
       scenarioContainer.style.display = "none";
@@ -56,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       console.log("Old Edition Checked"); // False
       editionChecker.checked = false;
+      editionScenarios = "scenarios.json";
+      console.log(editionScenarios);
       document.getElementById("scenarioPools2024").classList.add("hidden");
       document.getElementById("scenarioPools").classList.remove("hidden");
       scenarioContainer.style.display = "none";
@@ -70,13 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function loadScenario(scenarioKey) {
-    if (editionChecker === false) {
-      editionScenarios = "scenarios.json";
-      console.log(editionScenarios);
-    }
-    if (editionChecker === true) {
-      editionScenarios = "scenarios2024.json";
-    }
     console.log(editionScenarios);
     fetch(editionScenarios)
       .then((response) => response.json())
@@ -275,91 +272,117 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("scenarioPools").classList.add("selected");
     } else {
       console.log("Random Generation");
-      switch (scenarioPool) {
-        case 1:
-          scenarioPoolName = "Maelstrom of Battle";
-          switch (scenarioNum) {
-            case 1:
-              selectedScenario = "heirlooms";
-              break;
-            case 2:
-              selectedScenario = "hold_ground";
-              break;
-            case 3:
-              selectedScenario = "command_battlefield";
-              break;
-          }
-          break;
-        case 2:
-          scenarioPoolName = "Hold Objective";
-          switch (scenarioNum) {
-            case 1:
-              selectedScenario = "domination";
-              break;
-            case 2:
-              selectedScenario = "capture_control";
-              break;
-            case 3:
-              selectedScenario = "breakthrough";
-              break;
-          }
-          break;
-        case 3:
-          scenarioPoolName = "Object";
-          switch (scenarioNum) {
-            case 1:
-              selectedScenario = "seize_prize";
-              break;
-            case 2:
-              selectedScenario = "destroy_supplies";
-              break;
-            case 3:
-              selectedScenario = "retrieval";
-              break;
-          }
-          break;
-        case 4:
-          scenarioPoolName = "Kill the Enemy";
-          switch (scenarioNum) {
-            case 1:
-              selectedScenario = "lords_battle";
-              break;
-            case 2:
-              selectedScenario = "contest_champions";
-              break;
-            case 3:
-              selectedScenario = "death";
-              break;
-          }
-          break;
-        case 5:
-          scenarioPoolName = "Manoveuring";
-          switch (scenarioNum) {
-            case 1:
-              selectedScenario = "storm_camp";
-              break;
-            case 2:
-              selectedScenario = "reconnoitre";
-              break;
-            case 3:
-              selectedScenario = "divide_conquer";
-              break;
-          }
-          break;
-        case 6:
-          scenarioPoolName = "Unique";
-          switch (scenarioNum) {
-            case 1:
-              selectedScenario = "fog_of_war";
-              break;
-            case 2:
-              selectedScenario = "clash_moonlight";
-              break;
-            case 3:
-              selectedScenario = "assassination";
-              break;
-          }
-          break;
+      if (editionChecker.checked) {
+        console.log("Random mode for 2024.");
+        scenarioNum = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        switch (scenarioNum) {
+          case 1:
+            selectedScenario = "hold_ground";
+            break;
+          case 2:
+            selectedScenario = "destroy_supplies";
+            break;
+          case 3:
+            selectedScenario = "death";
+            break;
+          case 4:
+            selectedScenario = "reconnoitre";
+            break;
+          case 5:
+            selectedScenario = "fog_of_war";
+            break;
+          case 6:
+            selectedScenario = "domination";
+            break;
+        }
+      } else {
+        console.log("Random mode for old.");
+        switch (scenarioPool) {
+          case 1:
+            scenarioPoolName = "Maelstrom of Battle";
+            switch (scenarioNum) {
+              case 1:
+                selectedScenario = "heirlooms";
+                break;
+              case 2:
+                selectedScenario = "hold_ground";
+                break;
+              case 3:
+                selectedScenario = "command_battlefield";
+                break;
+            }
+            break;
+          case 2:
+            scenarioPoolName = "Hold Objective";
+            switch (scenarioNum) {
+              case 1:
+                selectedScenario = "domination";
+                break;
+              case 2:
+                selectedScenario = "capture_control";
+                break;
+              case 3:
+                selectedScenario = "breakthrough";
+                break;
+            }
+            break;
+          case 3:
+            scenarioPoolName = "Object";
+            switch (scenarioNum) {
+              case 1:
+                selectedScenario = "seize_prize";
+                break;
+              case 2:
+                selectedScenario = "destroy_supplies";
+                break;
+              case 3:
+                selectedScenario = "retrieval";
+                break;
+            }
+            break;
+          case 4:
+            scenarioPoolName = "Kill the Enemy";
+            switch (scenarioNum) {
+              case 1:
+                selectedScenario = "lords_battle";
+                break;
+              case 2:
+                selectedScenario = "contest_champions";
+                break;
+              case 3:
+                selectedScenario = "death";
+                break;
+            }
+            break;
+          case 5:
+            scenarioPoolName = "Manoveuring";
+            switch (scenarioNum) {
+              case 1:
+                selectedScenario = "storm_camp";
+                break;
+              case 2:
+                selectedScenario = "reconnoitre";
+                break;
+              case 3:
+                selectedScenario = "divide_conquer";
+                break;
+            }
+            break;
+          case 6:
+            scenarioPoolName = "Unique";
+            switch (scenarioNum) {
+              case 1:
+                selectedScenario = "fog_of_war";
+                break;
+              case 2:
+                selectedScenario = "clash_moonlight";
+                break;
+              case 3:
+                selectedScenario = "assassination";
+                break;
+            }
+            break;
+        }
       }
       console.log(scenarioPoolName);
       console.log(selectedScenario);
