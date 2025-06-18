@@ -1,0 +1,23 @@
+{
+  "objectives": [
+    {
+      "type": 1,
+      "outcome": "The Once one Army has been Broken, the game might suddenly end. At the end of each turn, after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. t the end of the game, the player who has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw."
+    },
+    {
+      "result": 2,
+      "outcome": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw."
+    }
+  ],
+  "victoryPoints": [ {
+    "1": [
+        "You score 4 Victory Points if you have more models within 6 of the objective than your opponent. If you have twice as many models within 6 of the objective than your opponent, then you instead score 8 Victory Points. If you have three times as many models within 6 of the objective than your opponent, or you are the only player to have models within 6 of the objective, then you instead score 12 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy force is Broken at the end of the game. If the enemy force is Broken and your force is unbroken, you instead score 3 Victory Points.",
+        "You score 2 Victory Points if your opponent has no banners remaining at the end of the game (if they didn’t have a banner to start with, you automatically score this)."
+      ],
+      "2":[]
+    }
+  ],
+  "layOut": []
+}

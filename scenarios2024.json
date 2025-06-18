@@ -9,7 +9,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game, but will enter as the game continues (see Special Rules later).",
       "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn.",
       "scenario_objectives": "Once one Army has been Broken, the game might suddenly end. At the end of each turn, after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. t the end of the game, the player who has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "./deployment/holdGround.png",
+      "scenario_image": "./deployment/holdGround.png",
       "scenario_scoringVP": [
         "You score 4 Victory Points if you have more models within 6 of the objective than your opponent. If you have twice as many models within 6 of the objective than your opponent, then you instead score 8 Victory Points. If you have three times as many models within 6 of the objective than your opponent, or you are the only player to have models within 6 of the objective, then you instead score 12 Victory Points.",
         "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points.",
@@ -27,7 +27,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a Warband in their Army to deploy wholly within 12 of their board edge. Models must be deployed within 6 of the Captain of their Warband. When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 12 of their board edge, as described above. Players then alternate until all of their Warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "./deployment/destroyTheSupplies.png",
+      "scenario_image": "./deployment/destroyTheSupplies.png",
       "scenario_scoringVP": [
         "You score 3 Victory Points for each enemy Supply Marker that has been destroyed.",
         "You score 1 Victory Point for each enemy Supply Marker that has not been destroyed, but you have more models within 3 than your opponent.",
@@ -48,7 +48,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge, as described above. Players then alternate until all warbands have been placed..",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "./deployment/toTheDeath.png",
+      "scenario_image": "./deployment/toTheDeath.png",
       "scenario_scoringVP": [
         "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General has been wounded, and only has 1 Wound remaining, then you instead score 3 Victory Points. If the enemy General was removed as a casualty, you instead score 5 Victory Points.",
         "You score 3 Victory Points if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 5 Victory Points.",
@@ -68,7 +68,7 @@
       "scenario_startingPOS": "At the battle’s start, the forces are yet to arrive – models are not deployed at the start of the game. Both players roll a D6. The player with the highest result chooses one of the long table edges to be their board edge – the opposing player has the opposite board edge as their board edge (see Special Rules later).",
       "scenario_priority": "Both players roll a D6. The player with the highest score has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one force has been reduced to a quarter (25%) of its starting number of models, or below, at which point the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw. Models that have escaped the board count as being on the board for the purpose of determining if a force is Broken.",
-      "scnenario_image": "./deployment/recconoitre.png",
+      "scenario_image": "./deployment/reconnoitre.png",
       "scenario_scoringVP": [
         "You score 4 Victory Points if more of your models have escaped the battlefield via your opponent’s board edge than vice versa. If at least two of your models and twice as many models than your opponent have escaped the board, then you instead score 8 Victory Points. If at least three of your models, and three times as many models than your opponent have escaped the board, then you instead score 12 Victory Points.",
         "You score 1 Victory Point for each of your Hero models that escapes the board, to a maximum of 3 Victory Points.",
@@ -86,7 +86,7 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a warband in their force to deploy within 12 of their board edge. Models may not be deployed further than 6 from the captain of their warband. When this has been done, the opposing player chooses one of their warbands and deploys it within 12 of their board edge as described above. Players then alternate until all warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
       "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "./deployment/fogOfWar.png",
+      "scenario_image": "./deployment/fogOfWar.png",
       "scenario_scoringVP": [
         "At the start of the game, secretly note down one of your own Hero models – this may not be your General unless you only have one Hero. You score 1 Victory Point if the nominated Hero is still alive at the end of the game. If the nominated Hero is still alive and has suffered no Wounds, you instead score 3 Victory Points. If the nominated Hero is still alive and has suffered no Wounds, and spent no Fate Points, you instead score 5 Victory Points.",
         "At the start of the game, secretly note down one of your opponent’s Hero models – this may not be your opponent’s General unless they only have one Hero. You score 1 Victory Point for causing one or more Wounds on the nominated Hero. Wounds prevented by a successful Fate roll do not count. If the nominated Hero has been removed as a casualty, you instead score 3 Victory Points. If the nominated Hero has been removed as a casualty as a result of one of your models wounding them in Combat, you instead score 5 Victory Points.",
@@ -105,13 +105,355 @@
       "scenario_startingPOS": "Both players roll a D6 – the player with the highest result chooses one of the deployment zones. They then select a Warband in their Army to deploy wholly within 24 of their board edge. Models must be deployed within 6 of the Captain of their Warband. When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 24 of their board edge, as described above. Players then alternate until all of their Warbands have been placed.",
       "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn.",
       "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
-      "scnenario_image": "./deployment/domination.png",
+      "scenario_image": "./deployment/domination.png",
       "scenario_scoringVP": [
         "For each Objective Marker, you score 1 Victory Point if you have more models within 3 than your opponent. If you have at least twice as many models as your opponent within 3, you instead score 2 Victory Points. If you are the only player to have models within 3, you instead score 3 Victory Points.",
         "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 2 Victory Points.",
         "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points."
       ],
       "scenario_specialRules": []
+    },
+    "capture_and_control": {
+      "scenario": "Capture & Control",
+      "scenario_flavor": "",
+      "scenario_outline": "Control areas of the battlefield and deny them to your foe.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. Then, place five Objective Markers on the batlefield; one is automatically placed in the centre of the board. One Objective Marker is placed exactly halfway between the centre of the board and the centre of the northern table edge. The other three Objective Markers are deployed in the same way in relation to the east, south and west board edges respectively (see map).",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result chooses one of the deployment zones. They then select a Wartand in their force and roll a D6. On a 1-3, all models in that Warband must be deployed i n their deployment zone and wholly within 12\" of the centreline of the board. On a 4-6, the models can be deployed anywhere wholly within their deployment zone. Models may not be deployed within I' of an enemy model, Regardiess of the dice roll, models may not be deployed further than 6* from the Captain of their Warband. When this has been done, the opposing player chooses one of their warbands and rolls to place it as described above. Players alternate until all Warbands have been placed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/captureAndControl.png",
+      "scenario_scoringVP": [
+        "You score 3 Victory Points for each Objective Marker that is under your control at the end of the Game.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 2 Victory Points."
+      ],
+      "scenario_specialRules": ["controlling_objectives"]
+    },
+    "breakthrough": {
+      "scenario": "Breakthrough",
+      "scenario_flavor": "",
+      "scenario_outline": "Capture the areas of the battlefield that are worth the most to your opponent.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terain as described on page 157 of the Midile-earth Strategy Battle Game Rules Manual. Then, place four Objective Markers on the board. One of these is placed exactly 12\" from the centre of one player's board edge, and another is placed exactly 12\" from the centre of the other player's board edge. The remaining two objectives are both placed 12\" away from the centre of the board, on opposite sides, along the centreline of the board.",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result chooses one of the deployment zones. They then select a Warband in their Army to deploy wholly within 24\" of their beard edge. Models may not be deployed further than 6\" from the Captain of their Warband. When this has been done, the oposing player chooses one of their Warbands and deploys it wholy within 24\" of their board edge, as described above. Players then alternate until all of their Warbands have been placed",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/breakThrough.png",
+      "scenario_scoringVP": [
+        "You score 1 Victiory Point if there are more friendly models than enemy models within 3\" of the objective marker in your own deployment zone",
+        "For each Objective Marker on the centreline of the board. you score 1 Victory Point if there are more friendly models than enemy models within 3\" of the Objective Marker. If there is at least one friendly model, and no enemy models. within 3\" of this Objective Marker, you instead score 3 Victory Points",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 2 Victory Points.",
+        "You score 3 Victory Points if there are more friendly models than enemy models within 3\" of the Objective Marker in your opponent's deployment zone. If there is at least one friendly model, and no enemy models. within 3\" of this Objective Marker, you instead score 5 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 2 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 2 Victory Points.",
+        "You score 2 Victory Points if your opponent has no banners remaining at the end of the game (if they didn't have a banner to start with, you automatically score this.",
+        "You score 1 Victory Point if the model with the highest points cost in your opponent's army, that is not their General, was wounded during the game. If the most expensive model that is not their General was removed as a casualty, you instead score 2 Victory Points."
+      ],
+      "scenario_specialRules": []
+    },
+    "stake_a_claim": {
+      "scenario": "Stake A Claim",
+      "scenario_flavor": "",
+      "scenario_outline": "Players fight to secure a foothold in five key locations.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. Then, place five Objective Markers on the battlefield; one is automatically placed in the centre of the board. One Objective Marker is placed exactly halfway between the centre of the board and the centre of the northern table edge. The other three Objective Markers are deployed in the same way in relation to the east, south and west board edges respectively see map).",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result choses Warband one of the deployment zones. They then select a in their Army to deploy wholly within 12\" of their board edge. Models may not be deployed further than 6\" from the Captain of their Warband When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 12° of their board edge, as described above. Players then alternate until all of their Warbands have been placed",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/clashByMoonlight.png",
+      "scenario_scoringVP": [
+        "For this Scenario you need to keep track of the total number of Fortification Points you scored throughout the game. You score 4 Victory Points if you scored more Fortification Points than your oponent. If you scored least twice as many Fortification Points as your opponent then you instead score 8 Victory Points. If you scored at least three times as many Fortification Points as you opponent you instead score 12 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points",
+        "You score 1 Victory Point if the enemy Army is Broken a the end of the game. If the enemy Army is Broken and yourl Army is not, you instead score 3 Victory Points.",
+        "At the end of the game, the player who controls the most Objective Markers scores 2 Victory Points. A playe controls an Objective Marker If they have more models within 3\" of the Objective Marker than their opponent."
+      ],
+      "scenario_specialRules": ["establish_defenses"]
+    },
+    "lords_of_battle": {
+      "scenario": "Lords of Battle",
+      "scenario_flavor": "",
+      "scenario_outline": "A pitched battle where victory goes to the player who caused the most carnage.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. ",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result choses Warband one of the deployment zones. They then select a in their Army to deploy wholly within 24\" of their board edge. Models may not be deployed further than 6\" from the Captain of their Warband When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 24\" of their board edge, as described above. Players then alternate until all of their Warbands have been placed",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/assassination.png",
+      "scenario_scoringVP": [
+        "For this Scenario you need to keep track of your Wound Tally. Your Wound tally is equal to the number of Wounds your opponent's Army has suffered, regardless of how they were inflicted (including any disabled Siege Engine models), plus any Fate Points that your opponent spent. Wounds that are prevented by a manner other than Fate (such as the Fury Magical Power or if a model can use Will Points as if they were Fate points) do not add to your Wound tally. Hero models that are removed from the game with unspent Fate Points will add 1 to the Wound Tally for each one unspent. Models that flee because their force is Broken count towards the Wound tally, but a Mount that flees does not. You score 4 Victory Points if your Wound tally is greater than your opponents. If your Wound Tally is at least twice as large as your opponent's, then you instead score 8 Victory Points. If your Wound tally is at least three times as large as your opponents, or your opponent has no models left on the board, then you instead score 12 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point for each enemy Hero model that has been removed as a casualty, up to a maximum of 2 Victory Points."
+      ],
+      "scenario_specialRules": ["time_of_heroes"]
+    },
+    "assassination": {
+      "scenario": "Assassination",
+      "scenario_flavor": "",
+      "scenario_outline": "Using your Assassin, slay your target to achieve victory.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. ",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result choses Warband one of the deployment zones. They then select a in their Army to deploy wholly within 12\" of their board edge. Models may not be deployed further than 6\" from the Captain of their Warband When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 12° of their board edge, as described above. Players then alternate until all of their Warbands have been placed",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/assassination.png",
+      "scenario_scoringVP": [
+        "You score 3 Victory Points if your Target has suffered on or more Wounds. If your Target has suffered one or more Wounds, and your Assassin caused at least one of the Wounds, you instead score 6 Victory Points. If your target has been slain, you instead score 9 Victory Points. If you Target has been slain, and your Assassin caused the final Wound, you instead score 12 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Poins",
+        "You score 1 Victory Point if the enemy Army is Broken the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point If your Assassin is still alive us end of the game",
+        "You score 1 Victory Point if the model your chose as their Target is still alive at the end of opponent the game"
+      ],
+      "scenario_specialRules": ["dark_of_night", "the_target", "the_assassin"]
+    },
+    "contest_of_champions": {
+      "scenario": "Contest of Champions",
+      "scenario_flavor": "",
+      "scenario_outline": "A trial of heroes; the Champion who causes the most carnage wil rise triumphant.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. ",
+      "scenario_startingPOS": "Before any models are deployed, both players must nominate one Hero model in their Army to be their Champion. Both players then roll a D6 - the player with the highest result chooses one of the deployment zones. They place their Champion wholy within their deployment zone and within 3\" of the centre of the board and then deploy their Champion's Wartand wholly within their deployment sone and within 6\" of the Champion. Their opponent then does the same. Players then take it in turns (starting with the player who rolled highest) to select a Warband in their force and roll a D6.  On a 1-3, all models in that Warband must be deployed wholly within their deployment zone and wholy within 12\" of the plyer's board edge. * On a 4-6, the models can be deployed anywhete wholly within their deployment zone Models may not be placed within l ' of an Regardless of the dice roll, models may not be further than 6* from the Captain of their enemy model. deployed Warband. Players alternate until all Warbands have been placed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/ContestOfChampions.png",
+      "scenario_scoringVP": [
+        "Keep a count of how many kills your Champion scores in Combat throughout the course of the battle. Note, kills caused by shooting, Magical Powers or the Hurl Brutal Power Attack do not count towards your Champion's score. You score 4 Victory Points if your Champion has killed more models than your opponents Champion. If your Champion has killed at least two models and at least twice as many as your opponents Champion, then you instead score 8 Victory Points, If your Champion has killed at least three models and at least three times as many as your opponent's Champion, then you instead score 12 Victory Points.",
+        "You score 2 Victory Points if your Champion kills the opposing Champion.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if your General is alive at the end of the game. If your General is alive and has suffered no Wounds at the end of the game, you instead score 3 Victory Points."
+      ],
+      "scenario_specialRules": ["time_of_heroes", "stand_and_fight"]
+    },
+    "heirlooms": {
+      "scenario": "Heirlooms of Ages Past",
+      "scenario_flavor": "",
+      "scenario_outline": "A precious Heirloom lies upon the battlefield. They who hold it will win the day!.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-carth Strategy Battle Game Rules Manual. This Scenario uses s i x Objective Markers, one representing the Heirlom and five as decoys. All six Objective Markers should be Identical on one side, with the one that is the Heirlom clearly marked on the reverse side. To deploy the Objective Markers, place one exactly 12\" from the centre of the northern board edge and another cactly 12\" from the centre of the southern board edge. The remaining four Objective Markers are deployed so that they form a hexagon with each being 12\" away from the others, as shown on the map It you are playing this Scenario in a tournament, it is a good idea to get another table to deploy your Objective Markers whilst you do the same for them. That way players won't accidentally see where the Heirloom is as they deploy their Orbjective Markers.",
+      "scenario_startingPOS": "At the battle's start, the forces are yet to arrive - models are not deployed at the start of the game, but will enter as the game continues.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/heirloom.png",
+      "scenario_scoringVP": [
+        "You score 8 Victory Points if your Army is in posses of the Heirloom at the end of the game. If at the end the game no model from either Army is in posession the Heirloom, but you have more models within 3\" of the Heirloom than your oponent, then you instead score 4 Victory Points..",
+        "You score 1 Victory Point for each Objective Marker you Army has uncovered which has been revealed to be a decoy",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 2 Victory Points.",
+        "You score 1 Victory Point if you have at least one banner remaining at the end of the game. If you have more banners remaining than your opponent, then you instead score 2 Victory Points"
+      ],
+      "scenario_specialRules": [
+        "maelstrom_of_battle",
+        "heirloom_of_power",
+        "uncovering_relic"
+      ]
+    },
+    "sites_of_power": {
+      "scenario": "Sites of Power",
+      "scenario_flavor": "",
+      "scenario_outline": "Players tight to control four objectives across the battlefield.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. Then, place four Objective Markers on the battlefeld. The first Objective Marker is placed ecictly halfway between the centre of the board and the north cast corner of the board edge. The other three Objective Markers are deployed in the same way in relation to the south east, south-west and north-west corners respectively (see map). ",
+      "scenario_startingPOS": "At the battle's start, the forces are yet to arrive - models are not deployed at the start of the game, but will enter as the game continues.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/heirloom.png",
+      "scenario_scoringVP": [
+        "For each Objective Marker, you score 1 Victory Point if you have more models within 3\" than your opponent. If you have at least twice as many models as your opponent within 3\", you instead score 2 Victory Points. If you are the only player to have models within 3\", you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the model with the highest points cost in your opponent's army, that is not their General, was wounded during the game. If the most expensive model that is not their General was removed as a casualty, you instead score 2 Victory Points."
+      ],
+      "scenario_specialRules": [
+        "dark_of_night",
+        "maelstrom_of_battle",
+        "strange_aura"
+      ]
+    },
+    "command_the_battlefield": {
+      "scenario": "Command the Battlefield",
+      "scenario_flavor": "",
+      "scenario_outline": "The battlefield is divided into quarters; control the most to achieve victory.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. ",
+      "scenario_startingPOS": "At the battle's start, the forces are yet to arrive - models are not deployed at the start of the game, but will enter as the game continues.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/heirloom.png",
+      "scenario_scoringVP": [
+        "You score 1 Victory Point for each quarter of the board that has more friendly models than enemy models wholy within it. For each quarter of the board that has at least double the number of friendly models wholly within it than enemy models, you instead score 2 Victory Points, For each quarter of the board that has only friendly models and no enemy models in it, you score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Poin",
+        "You score 2 Victory Points if the enemy Army has been reduced to 25% of its starting models at the end of the game."
+      ],
+      "scenario_specialRules": ["maelstrom_of_battle", "worthless_land"]
+    },
+    "retrieval": {
+      "scenario": "Retrieval",
+      "scenario_flavor": "",
+      "scenario_outline": "Reclaim what was stolen by the enemy and escape the battlefield with it.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. ",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result chooses one of the corners of the board, and their epponent antomaticaly has the opposite. A line is then drawn between the two chosen corners, and both players then place a single Objective Marker 20\" away from their corner along this line - this is their own Relic. The board is then split into two halves diagonaly between the two corners that were not chosen, forming two deployment zones. The player who scored the highest then selects a Warband in their force to deploy wholly within their deployment zone, but not within 3° of the line that runs disgonally through the centre of the board. Models may not be deployed further than 6* from the Captain o f their Warband When this has been done, the opposing player of their Warbands in their deployment zone as above. Players then alternate until all of their been placed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/retrieval.png",
+      "scenario_scoringVP": [
+        "You score 3 Victory Points if your opponent's Relic has moved from its original position at the end of the game. If you have retrieved your opponent's Relic, you instead score 6 Victory Points. If you have retrieved your opponent's Relic, and the model holding it is in your deployment zone. you instead score 9 Victory Points. If you have retrieved your opponent's Relic, and managed to move it of the board via either of the board edges in your deployment zone, you instead score 12 Victory Points.",
+        "ou score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 2 Victory Points.",
+        "You score 1 Victory Point for each enemy Hero model that has ben removed as a casualty, up to a maximum of 3 Victory Points"
+      ],
+      "scenario_specialRules": ["the_relic"]
+    },
+    "seize_the_prizes": {
+      "scenario": "Seize the Prizes",
+      "scenario_flavor": "",
+      "scenario_outline": "Recover the precious items and carry them through the enemy force to victory. ",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. Then, place three Objective Markers on the battlefield, one is automaticaly placed in the centre of the board, with the other two placed halfway betwen the central objective and the centre of the eastern and western board edges respectively. These represent the artefacts",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result chooses one of the deployment zones. They then select a Warband in their force to deploy wholly within 12\" of their board edge. Models may not be deployed further than 6' from the Captain of their Warband. When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 12\" of their board edge as described above. Players then alternate until all Warbands have been placed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until either all three Artefacts have been carried of the board, or both armies has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/siezeThePrizes.png",
+      "scenario_scoringVP": [
+        "You score 2 Victory Points for each Artefact that one of your models is carrying within your own board half. For each Artefact one of your models is carrying within you opponents board half, you instead score 3 Victory Points For each Artefact that one of your models carries of the board via your opponent's board edge, you instead score 4 Victory Points.",
+        "At the end of the game, for each of the Artefacts that is on the board but not in the possession of any model, the player who has the most models within 3\" of the Artefact scores 1 Victory Point.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Point",
+        "You score 1 Victory Point if you have at least one banner remaining at the end of the game. If you have moree banners remaining than your opponent, then you insted score 2 Victory Points"
+      ],
+      "scenario_specialRules": ["uncovering_artefacts"]
+    },
+    "treasure_hoard": {
+      "scenario": "Treasure Hoard",
+      "scenario_flavor": "",
+      "scenario_outline": "Recover more of the ancient Artefacts than your opponent.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. T Then, place three Objective Markers in each half of the board. The first is placed exactly 18\" from the centre of one player'y board edge. The others are then placed halfway betwen the central objective and the board edges on either side, ensuring that they are equidistant along an imaginary line 18\" from one players board edge (see map). These represent the Artefacts.",
+      "scenario_startingPOS": "Both players rol a D6 - the player with the highest result chooses one of the deployment zones. They then select a Warband in their force to deploy wholy within 12\" of the centre of their board edge. Models may not be deployed further than 6\" from the Captain of their Warband. When this has been done, the opposing player choses one of their Warbands and deploys it wholly within 12\" of the centre of their board edge as described above. Players then alternate until all Warbands have been ",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/treasureHoard.png",
+      "scenario_scoringVP": [
+        "You score 2 Victory Points for each Artefact that is in the possession of a friendly model.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points",
+        "You score 1 Victory Point if you have at least one model wholly within 12' of your opponent's board edge. If you have at least three models wholly within 12' of your opponent's board edpe, you instead scare 2 Victory Points."
+      ],
+      "scenario_specialRules": ["uncovering_artefacts"]
+    },
+    "storm_the_camp": {
+      "scenario": "Storm the Camp",
+      "scenario_flavor": "",
+      "scenario_outline": "Oust the enemy from their camp, whilst keeping yours secure.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game rules manual. ",
+      "scenario_startingPOS": "Both players roll a D6. The player who scored the highest choses one of the four table corners as their camp. They then deploy their Army (including any Siege Engine models) wholly within 18\" of their chosen table corner. Any models that cannot be deployed wholly within 18\" of the chosen corner will move onto the board via the controlling player's corner at the end of their first Move Phase. Their opponent then sets up their Army wholly within 18\" of the table corner diagonally oposite.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/stormTheCamp.png",
+      "scenario_scoringVP": [
+        "You score 5 Victory Points if your Army managed to capture your oponent's camp. If your Army managed capture your oponent's camp and you have a Hero model in your opponent's camp, you instead score 7 Victiry Points. If your Army managed to capture your opponents camp and you have a model with a banner in your opponent's camp, you instead score 10 Victory Points",
+        "You score 1 Victory Point if the enemy Army is Broken a the end of the game. If the enemy Army is Broken and your Army is not, you instead score 2 Victory Points",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points",
+        "You score 1 Victory Point for each model you have in you opponent's camp, to a maximum of 5 Victory Points"
+      ],
+      "scenario_specialRules": ["the_campsite"]
+    },
+    "divide_and_conquer": {
+      "scenario": "Divide and Conquer",
+      "scenario_flavor": "",
+      "scenario_outline": "Deliver your wounded allies to safety, whilst preventing the your enemy from the doing the same.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-carth Strategy Bartle Game Rules Manual. Then, place three Objective Markers in each player's deployment zone so that the Objective Markers are equidistant along the edge of each player's deployment zone, with one in the centre. The first is placed 12\" from the centre of the player's board edge. The others are then placed halfway between the central objective and the board edges on either side, so that all three Objective Markers are equidistant along the edge of one player's deployment zone.",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result chooses one of the deployment zones. They then select a Warband in their force to deploy wholly within 12\" of their board edge. Models may not be deployed further than 6\" from the Captain of their Warband. When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 12\" of their board edge, as described above. Players then alternate until all of their Warbands have been placed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/divideAndConquer.png",
+      "scenario_scoringVP": [
+        "You score 3 Victory Points if there are more friendly models than enemy models within 3\" of the central objective. If there is at least one friendly model, and no enemy models, within 3\" of this objective, you instead score 6 Victory Points.",
+        "For each of the other objectives, you score 1 Victory Point If there are more friendly models than enemy models within 3\" of the objective. If there is at least one friendly model, and no enemy models, within 3\" of this objective, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points",
+        "You score 2 Victory Points if at the end of the game your General is within 3\" of the central objective."
+      ],
+      "scenario_specialRules": [""]
+    },
+    "escort_the_wounded": {
+      "scenario": "Escort the Wounded",
+      "scenario_flavor": "",
+      "scenario_outline": "Deliver your wounded allies to safety, whilst preventing the enemy from doing the same.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game Rules Manual.  Then, place three Objective Markers in each player's deployment zone so that the Objective Markers are equidistant along the edge of each player's deployment zone, with one in the centre.",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest score chooses two oposite corners to be their deployment zones and labels them A and B. Their opponent has the other two comers and labels them A and B. The player who scored highest then deploys one of their Warbands anywhere wholly within 12\" of their corner A. The other player then does the same. The player that scored highest then deploys one of their Warbands anywhere wholly within 12\" of their corner B. The other player then deploys the same. Players then repeat the process above until al Warbands have been deployed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/escortWounded.png",
+      "scenario_scoringVP": [
+        "You score 2 Victory Points for each of your wounded models that is being caried by a friendly model in your opponent board half. For each wounded ally that has been rescued you instead score 4 Victory Points.",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points",
+        "You score 2 Victory Points if your opponent has no banners remaining at the end of the game (if they didnt have a banner to start with, you automaticaly score this)"
+      ],
+      "scenario_specialRules": ["the_sanctuary", "wounded_allies"]
+    },
+    "clash_by_moonlight": {
+      "scenario": "Clash by Moonlight",
+      "scenario_flavor": "",
+      "scenario_outline": "Two forces clash in the dark of night in a bid to assert their dominance upon the other.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Middle-earth Strategy Battle Game Game Rules Manual. Once the battlefield has been set up, an Objective Marker is placed in the centre of the battlefield.",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest score chooses two oposite corners to be their deployment zones and labels them A and B. Their opponent has the other two comers and labels them A and B. The player who scored highest then deploys one of their Warbands anywhere wholly within 12\" of their corner A. The other player then does the same. The player that scored highest then deploys one of their Warbands anywhere wholly within 12\" of their corner B. The other player then deploys the same. Players then repeat the process above until al Warbands have been deployed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/clashByMoonlight.png",
+      "scenario_scoringVP": [
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 4 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 4 Victory Points.",
+        "You score 2 Victory Points if your opponent has no banners remaining at the end of the game (if they didn't have a banner to start with, you automatically score this).",
+        "You score 1 Victory Point if you have at least one banner remaining at the end of the game. If you have more banners remaining than your opponent, then you instead score 2 Victory Points",
+        " You score 1 Victory Point for each enemy Hero model that has ben removed as a casualty, up to a maximum of 4 Victory Points.",
+        " You score 1 Victory Point if you have rote models within 3\" of the objective than your opponent. If you have twice as many models within 3\" of the objective than your opponent, or you are the only player to have models within 3\" of the objective, then you instead score 4 Victory Points."
+      ],
+      "scenario_specialRules": ["dark_of_night"]
+    },
+    "lead_from_the_front": {
+      "scenario": "Lead from the Front",
+      "scenario_flavor": "",
+      "scenario_outline": "Use your heroes to secure key areas of the battlefield.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terain as described on page 157 of the Middle-earth Strategy Battle Game Rules Manual. Then, place three Objective Markers on the battlefield; one is automaticaly placed in the centre of the board, with the other two placed halfway between the central objective and the centre of the eastern and western board edges respectively (see map).",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest result chooses one of the deployment zones. They then select a Warband in their force to deploy wholly within 12\" of their board edge. Models may not be deployed further than 6\" from the Captain of their Warband. When this has been done, the opposing player chooses one of their Warbands and deploys it wholly within 12\" of their board edge, as described above. Players then alternate until all of their Warbands have been placed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "The game lasts until the end of a turn in which one Army has been reduced to a quarter (25%) of its starting number of models or below, at which point the player that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/clashByMoonlight.png",
+      "scenario_scoringVP": [
+        "You score 2 Victory Points for each Objective Mader has both friendly and enemy Hero models within 3\", but only if any of the friendly Hero models is of a higher Tier than any of the enemy Hero models.",
+        "You score 4 Victory Points for each Objective marker that has a friendly Hero model, and no enemy Hero models, within 3\"",
+        "You score 1 Victory Point if the enemy Army is Broken the end of the game. If the enemy Army is Broken andy Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General wa wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points",
+        "You score 2 Victory Points if your opponent has no banners remaining at the end of the game (if they didn't have a banner to start with, you automaticaly score this."
+      ],
+      "scenario_specialRules": ["time_of_heroes"]
+    },
+    "convergence": {
+      "scenario": "Convergence",
+      "scenario_flavor": "",
+      "scenario_outline": "Reunite your forces and deliver the Heirlooms to their place of power.",
+      "scenario_armies": "Players choose their forces, as described on page 154 of the Middle-earth Strategy Battle Game rules manual, to an equal points value before the game.",
+      "scenario_layout": "Set up terrain as described on page 157 of the Miadle earth Strategy Battle Game Rules Manual, Place four Objective Markers on the batlefield to represent the different Heirloms. Place the first Objective Marker halfway between the centre of the board and the northern board edge. The other three Objective Markers are deployed in the same way in relation to the east, south and west board edges respectively (see map).",
+      "scenario_startingPOS": "Both players roll a D6 - the player with the highest score chooses two oposite corners to be their deployment zones and labels them A and B. Their opponent has the other two comers and labels them A and B. The player who scored highest then deploys one of their Warbands anywhere wholly within 12\" of their corner A. The other player then does the same. The player that scored highest then deploys one of their Warbands anywhere wholly within 12\" of their corner B. The other player then deploys the same. Players then repeat the process above until al Warbands have been deployed.",
+      "scenario_priority": "Both players roll a D6. The player who rolls highest chooses who has Priority in the first turn",
+      "scenario_objectives": "Once one force has been Broken, the game might suddenly end. At the end of each turn after this condition has been met, roll a D6. On a 1-2, the game ends – otherwise, the battle continues for another turn. At the end of the game, the force that has scored the most Victory Points wins the game. If both players have the same number of Victory Points, the game is a draw.",
+      "scenario_image": "./deployment/Convergence.png",
+      "scenario_scoringVP": [
+        "You score 1 Victory Point for each Heirloom that is being held by a friendly model. For each Heirloom that is being held by a friendly model within 6\" of the centre of the battlefield, you instead score 3 Victory Points.",
+        "You score 2 Victory Points if you have more models within 6\" of the centre of the battlefield than your opponent",
+        "You score 1 Victory Point if the enemy Army is Broken at the end of the game. If the enemy Army is Broken and your Army is not, you instead score 3 Victory Points.",
+        "You score 1 Victory Point if the enemy General was wounded during the game. If the enemy General was removed as a casualty, you instead score 3 Victory Points"
+      ],
+      "scenario_specialRules": ["heirloom_of_power"]
     }
   }
 }

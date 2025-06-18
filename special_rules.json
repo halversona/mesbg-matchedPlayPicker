@@ -13,6 +13,10 @@
       "rule": "Uncovering the Relic",
       "description": "Only one of the Objective markers is actually the relic that both sides seek. The first time each turn an unengaged Infantry model ends its movement in base contact with an Objective, they may search it in an attempt to uncover the relic. When this happens roll a D6. On a 6, the relic has been discovered and the model that discovered it takes possession of it (Might cannot be used to influence this roll). If the roll is a 1-5 then the relic is not there, remove the Objective from play. If the first five Objective markers to be searched do not reveal the relic, the last one will automatically be the relic, there is no need to roll for it."
     },
+    "uncovering_heirloom": {
+      "rule": "Uncovering Heirlooms",
+      "description": "Only one of the Objective Markers is actually the Heiroom that both sides sock. first time each turn an unerpend Infantry model ends The its movement base c o n t a c t 7cach objective, they may search it in an attempt to u n r u s Heirloom. When this happens, flip the Objective Part both players. f the Objective Marker is one of t h from play. If the Objective Market i s that searched for it will immediately decoys, remove it om, the mode esion of it. f at the end of the game the Heirloom has i uncovered, flip any remalning Objective M reveal the Heirloom before working out a n y Do been s over to tory Points"
+    },
     "relic_of_power": {
       "rule": "Relic of Power",
       "description": "The relic is treated as a Light Object(see page 109 of the Middle-earth Strategy Battle Game rules manual). However the dark powers that lie upon it may seep into the mind of its holder. Unwilling to give it up, models carrying the relic may not drop it or pass it to another model. Additionally, at the start of each turn, before Priority is rolled, roll a D6. On a 1, the model is Transfixed as on page 98 of the Middle-earth Strategy Battle Game rules manual. Might may not be used to modify this roll."
@@ -62,6 +66,31 @@
     "controlling_objectives": {
       "rule": "Controlling Objectives",
       "description": "At the start of the game, all of the Objectives are considered to be neutral and do not belong to either side. If, during the End phase of any turn, one or more of your models are in base contact with an Objective, then that Objective comes under your control. If, during the End phase both sides have models in base contact with an Objective, then that Objective returns to being a neutral Objective."
+    },
+    "establish_defenses": {
+      "rule": "Establish Defenses",
+      "description": "At the beginning of the End Phase of each turn, each player will score 1 Fortification Point for each Objective Marker that has both friendly and enemy model but more friendly than enemy models , within 3\", If a player has at least one of their models, and no enemy models, within 3\" of an Objective Marker the instead score 2 Fortificat for that Objective"
+    },
+    "stand_and_fight": {
+      "rule": "Stand and Fight",
+      "description": "At the start of every Move Phase, the Champion that currently has scored the fewest number of kills (see the first bullet point of Scoring Victory Points above) may declare a Heroic Move for fre during that Move Phase. If they do they must charge an enemy model"
+    },
+    "strange_aura": {
+      "rule": "Strange Aura",
+      "description": "Strange Aura: At the beginning of the Priority Phase of each turn, roll a D6 and consult the table below to determine what effect the sites of power have on those around them until the end of the turn.",
+      "table": "1-2: Until the end of the turn, each time a model within 3\" of an Objective Marker sufers a Wound, roll a D6. On a roll of a natural 6, the Wound is ignored. This roll is taken Immediately after the Wound has been suffered, before Fate Rolls or any other rules that confer a similar effect. Might may not be used to modify this roll. 3-4: Until the end of the turn, models within 3\" of an Objective Marker automatically pass any Courage Tests they are required to take. 5-6: Until the end of the turn, models within 3\" of an Objective Marker may re-roll any To Wound Rolls of a 1 when making Strike"
+    },
+    "the_campsite": {
+      "rule": "The Campsite",
+      "description": "The Campsites are the deployment areas of the two armies. A Campsite is captured if at the end of the game you have more models wholly within your opposent campsite than they d o Models that are within their own Campsite will defend Ke all costs. Any model that is within its own Campsite at the start of a turn will automatically pass any Courage Tests to required to make for the remainder of that turn."
+    },
+    "the_sanctuary": {
+      "rule": "The Sanctuary",
+      "description": " The areas within 12\" of the not in a player's deployment zone are corners that an considered to be the players Sanctuaries. These are the places where they are trying to get their wounded allies."
+    },
+    "wounded_allies": {
+      "rule": "Wounded Allies",
+      "description": "The Objective Markers in each player's deployment zone represent wounded allies they are attempting to get to safety. Wounded allies are treated as a Heavy Object see page 134 of the Middle-earth Strategy Battle Game Rules Manual. If, during the End Phase of any turn, a friend scarying a wounded aly and Is wholly within a friendy sanctuary , the wounded ally is removed from the batr and has been rescued. Models may never carry their opponents wounded allies under any circumstances"
     }
   }
 }

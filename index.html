@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-new.css" />
 
     <title>MESBG Matched Play Scenarios</title>
   </head>
@@ -11,22 +11,22 @@
     <div class="container">
       <!-- This is div contains the header information for the page. This should not be adjusted by the page.-->
       <div class="headerDiv">
-        <h1>MESBG Scenario Picker</h1>
+        <h1>MESBG Scenarios</h1>
         <h2 id="modeHeader">Random Method</h2>
-        <div class="buttonContainer">
-          Random<input type="checkbox" id="generationMethod" /><label
-            for="generationMethod"
-            class="generationMethod"
-          ></label
-          >Veto
+        <div class="selectorContainer" id="generationContainer">
+          <span class="toggleLabel">Random</span>
+          <input type="checkbox" id="generationMethod" class="toggleInput" />
+          <label for="generationMethod" class="toggleSwitch"></label>
+          <span class="toggleLabel">Veto</span>
         </div>
-        <div class="buttonContainer">
-          Old<input type="checkbox" id="editionChecker" /><label
-            for="editionChecker"
-            class="editionChecker"
-          ></label
-          >2024
+
+        <div class="selectorContainer" id="editionContainer">
+          <span class="toggleLabel">Old</span>
+          <input type="checkbox" id="editionChecker" class="toggleInput" />
+          <label for="editionChecker" class="toggleSwitch"></label>
+          <span class="toggleLabel">2024</span>
         </div>
+
         <p id="headerText">
           The Random method will randomly select a pool and scenario to be
           played by the players.
@@ -174,37 +174,170 @@
       <div id="scenarioPools2024">
         <!--This has the Pools and the scenarions in reach respective pool. Each scenario can be clicked on to pull up the 
         scenario. Once a scenario has been pulled up, the pool div should be minimized and replaced by the scenario info section-->
-        <div id="pool2024" class="poolBox">
-          <h2>Scenario Pool</h2>
+        <div id="poolOne" class="poolBox">
+          <h2>Pool 1</h2>
           <ul class="linkTree">
-            <li id="2024_holdGround">
+            <li>
+              <a href="#" class="scenario-link" data-scenario="heirlooms"
+                >Heirlooms of Ages Past</a
+              >
+            </li>
+            <li>
               <a href="#" class="scenario-link" data-scenario="hold_ground"
                 >Hold Ground</a
               >
             </li>
-            <li id="2024_domination">
-              <a href="#" class="scenario-link" data-scenario="domination"
-                >Domination</a
+            <li>
+              <a href="#" class="scenario-link" data-scenario="breakthrough"
+                >Breakthrough</a
               >
             </li>
-            <li id="2024_destroySupplies">
-              <a href="#" class="scenario-link" data-scenario="destroy_supplies"
-                >Destroy the Supplies</a
+            <li>
+              <a href="#" class="scenario-link" data-scenario="stake_a_claim"
+                >Stake A Claim</a
               >
             </li>
-            <li id="2024_death">
+          </ul>
+        </div>
+        <div id="poolTwo" class="poolBox">
+          <h2>Pool 2</h2>
+          <ul class="linkTree">
+            <li>
               <a href="#" class="scenario-link" data-scenario="death"
-                >To the Death!</a
+                >To The Death</a
               >
             </li>
-            <li id="2024_recon">
+            <li>
+              <a href="#" class="scenario-link" data-scenario="lords_of_battle"
+                >Lords Of Battle</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="assassination"
+                >Assassination</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="scenario-link"
+                data-scenario="contest_of_champions"
+                >Contest of Champions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="poolThree" class="poolBox">
+          <h2>Pool 3</h2>
+          <ul class="linkTree">
+            <li>
+              <a href="#" class="scenario-link" data-scenario="hold_ground"
+                >Hold Ground</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="heirlooms"
+                >Heirlooms of Ages Past</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="sites_of_power"
+                >Sites of Power</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="scenario-link"
+                data-scenario="command_the_battlefield"
+                >Command the Battlefield</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="poolFour" class="poolBox">
+          <h2>Pool 4</h2>
+          <ul class="linkTree">
+            <li>
+              <a href="#" class="scenario-link" data-scenario="destroy_supplies"
+                >Destroy the Suppliess</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="retrieval"
+                >Retrieval</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="seize_the_prizes"
+                >Sieze the Prizes</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="treasure_hoard"
+                >Treasure Hoard</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="poolFive" class="poolBox">
+          <h2>Pool 5</h2>
+          <ul class="linkTree">
+            <li>
               <a href="#" class="scenario-link" data-scenario="reconnoitre"
                 >Reconnoitre</a
               >
             </li>
-            <li id="2024_fogOfWar">
+            <li>
+              <a href="#" class="scenario-link" data-scenario="storm_the_camp"
+                >Storm the Camp</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="scenario-link"
+                data-scenario="divide_and_conquer"
+                >Divide and Conquer</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="scenario-link"
+                data-scenario="escort_the_wounded"
+                >Escort the Wounded
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="poolSix" class="poolBox">
+          <h2>Pool 6</h2>
+          <ul class="linkTree">
+            <li>
               <a href="#" class="scenario-link" data-scenario="fog_of_war"
                 >Fog of War</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="scenario-link"
+                data-scenario="clash_by_moonlight"
+                >Clash by Moonlight</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="scenario-link"
+                data-scenario="lead_from_the_front"
+                >Lead From the Front</a
+              >
+            </li>
+            <li>
+              <a href="#" class="scenario-link" data-scenario="convergence"
+                >Convergence</a
               >
             </li>
           </ul>

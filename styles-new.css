@@ -1,0 +1,310 @@
+/* ===================== */
+/* Base Reset & Typography */
+/* ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: radial-gradient(
+    circle at center,
+    #ebdebe 0%,
+    #d7ccaa 50%,
+    #beb491 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  color: #2d2d2d;
+  line-height: 1.2;
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  outline: 1px solid red; /* or use Chrome DevTools → "Inspect" */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+  color: darkred;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: darkred;
+}
+
+p {
+  margin: 6px 0;
+}
+
+/* ===================== */
+/* Layout Containers */
+/* ===================== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerDiv {
+  text-align: center;
+  padding: 10px;
+}
+
+/* ===================== */
+/* Image Styling (Fixed Size) */
+/* ===================== */
+img {
+  max-width: 310px;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================== */
+/* Scenario Info Panel */
+/* ===================== */
+#scenarioInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto; /* ensures horizontal centering */
+}
+
+/* ===================== */
+/* Scenario Pools */
+/* ===================== */
+#scenarioPools,
+#scenarioPools2024,
+#scenarioPools.selected,
+#scenarioPools2024.selected {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 2px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+#scenarioPools.hidden,
+#scenarioPools2024.hidden {
+  display: none;
+}
+
+/* ===================== */
+/* Pool Box Styling */
+/* ===================== */
+.poolBox {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid darkred;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+.poolBox:hover {
+  transform: translateY(-4px);
+}
+
+/* ===================== */
+/* Toggle Controls */
+/* ===================== */
+.selectorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.toggleLabel {
+  min-width: 50px; /* ensures equal width for all left/right labels */
+  text-align: right; /* or center, depending on desired look */
+}
+
+.toggleSwitch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggleSwitch::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: darkred;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleInput:checked + .toggleSwitch {
+  background-color: #777;
+}
+
+.toggleInput:checked + .toggleSwitch::before {
+  transform: translateX(24px);
+}
+.selectorContainer span {
+  min-width: 40px;
+  text-align: center;
+}
+
+/* ===================== */
+/* Button Container */
+/* ===================== */
+.buttonContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* ===================== */
+/* Utility Styles */
+/* ===================== */
+.linkTree {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+.linkTree li {
+  margin-bottom: 5px;
+}
+
+.hidden,
+.noDisplay {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* ===================== */
+/* Responsive Grid (Desktop) */
+/* ===================== */
+@media (min-width: 1024px) {
+  .scenarioGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 20px;
+  }
+
+  #scenarioInfo {
+    max-width: 890px;
+  }
+
+  #scenarioPools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    align-items: stretch; /* Makes each box stretch to full row height */
+  }
+
+  #scenarioPools2024 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    align-items: stretch; /* Makes each box stretch to full row height */
+  }
+
+  .headerDiv {
+    grid-column: 1 / -1;
+  }
+
+  .poolBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkred;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 100%; /* Fill available space */
+  }
+}
+
+/* Hide the raw checkbox input */
+.toggleInput {
+  display: none;
+}
+
+/* Toggle switch visual */
+.toggleSwitch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0 10px;
+}
+
+/* Toggle knob */
+.toggleSwitch::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: darkred;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+/* When toggled on */
+.toggleInput:checked + .toggleSwitch {
+  background-color: #777;
+}
+
+.toggleInput:checked + .toggleSwitch::before {
+  transform: translateX(24px);
+}

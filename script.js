@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scenarioContainer = document.getElementById("scenarioInfo");
   const generateButton = document.getElementById("genScenario");
   const scenarioTitle = document.getElementById("scenarioTitle");
+  const chaosMode = document.getElementById("chaosMode");
   let generationMethod = document.getElementById("generationMethod");
   generationMethod.checked = false;
   editionChecker.checked = true;
@@ -101,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("scenario-ObjectivesText").textContent =
           scenario.scenario_objectives;
         document.getElementById("scenarioDeployment").src =
-          scenario.scnenario_image;
+          scenario.scenario_image;
 
         vpUl.innerHTML = "";
         specialRuleUL.innerHTML = "";
@@ -274,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Random Generation");
       if (editionChecker.checked) {
         console.log("Random mode for 2024.");
-        scenarioNum = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+        scenarioNum = Math.floor(Math.random() * (24 - 1 + 1) + 1);
         switch (scenarioNum) {
           case 1:
             selectedScenario = "hold_ground";
@@ -293,6 +294,60 @@ document.addEventListener("DOMContentLoaded", function () {
             break;
           case 6:
             selectedScenario = "domination";
+            break;
+          case 7:
+            selectedScenario = "capture_and_control";
+            break;
+          case 8:
+            selectedScenario = "breakthrough";
+            break;
+          case 9:
+            selectedScenario = "stake_a_claim";
+            break;
+          case 10:
+            selectedScenario = "lords_of_battle";
+            break;
+          case 11:
+            selectedScenario = "assassination";
+            break;
+          case 12:
+            selectedScenario = "contest_of_champions";
+            break;
+          case 13:
+            selectedScenario = "heirlooms";
+            break;
+          case 14:
+            selectedScenario = "sites_of_power";
+            break;
+          case 15:
+            selectedScenario = "command_the_battlefield";
+            break;
+          case 16:
+            selectedScenario = "retrieval";
+            break;
+          case 17:
+            selectedScenario = "seize_the_prizes";
+            break;
+          case 18:
+            selectedScenario = "treasure_hoard";
+            break;
+          case 19:
+            selectedScenario = "storm_the_camp";
+            break;
+          case 20:
+            selectedScenario = "divide_and_conquer";
+            break;
+          case 21:
+            selectedScenario = "escort_the_wounded";
+            break;
+          case 22:
+            selectedScenario = "clash_by_moonlight";
+            break;
+          case 23:
+            selectedScenario = "lead_from_the_front";
+            break;
+          case 24:
+            selectedScenario = "convergence";
             break;
         }
       } else {
@@ -401,35 +456,27 @@ function resetScenarios() {
   document.getElementById("poolFive").classList.remove("hidden");
   document.getElementById("poolSix").classList.remove("hidden");
   document.getElementById("scenarioPools2024").classList.remove("selected");
-  document.getElementById("2024_holdGround").classList.remove("hidden");
-  document.getElementById("2024_domination").classList.remove("hidden");
-  document.getElementById("2024_destroySupplies").classList.remove("hidden");
-  document.getElementById("2024_death").classList.remove("hidden");
-  document.getElementById("2024_recon").classList.remove("hidden");
-  document.getElementById("2024_fogOfWar").classList.remove("hidden");
 }
 
 function vetoSelection2024(scenarioNumber) {
   switch (scenarioNumber) {
     case 1:
-      document.getElementById("2024_holdGround").classList.remove("hidden");
+      document.getElementById("poolOne").classList.remove("hidden");
       break;
     case 2:
-      document.getElementById("2024_domination").classList.remove("hidden");
+      document.getElementById("poolTwo").classList.remove("hidden");
       break;
     case 3:
-      document
-        .getElementById("2024_destroySupplies")
-        .classList.remove("hidden");
+      document.getElementById("poolThree").classList.remove("hidden");
       break;
     case 4:
-      document.getElementById("2024_death").classList.remove("hidden");
+      document.getElementById("poolFour").classList.remove("hidden");
       break;
     case 5:
-      document.getElementById("2024_recon").classList.remove("hidden");
+      document.getElementById("poolFive").classList.remove("hidden");
       break;
     case 6:
-      document.getElementById("2024_fogOfWar").classList.remove("hidden");
+      document.getElementById("poolSix").classList.remove("hidden");
       break;
   }
 }
